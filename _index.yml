@@ -1,14 +1,14 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
+  title: ONTAP Mediator 
+  lead: ONTAP Mediator is an external service application that assists NetApp ONTAP features—such as MetroCluster IP configurations and SnapMirror active sync—by providing third-party arbitrated health checks, startup/shutdown control, and automated failover capabilities.
+  summary: ONTAP Mediator is an external service application that assists NetApp ONTAP features—such as MetroCluster IP configurations and SnapMirror active sync—by providing third-party arbitrated health checks, startup/shutdown control, and automated failover capabilities. 
+  keywords: ONTAP, Mediator, MetroCluster, SnapMirror, active sync, health check, startup, shutdown, failover, cloud Mediator 
   tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
+    - title: Get started
       links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
+        - title: Learn about ONTAP Mediator
+          url: /learn-about.html
+        - title: Quick start
+          url: /quick-start.html
+          
     # Next tile on this page (title/links)

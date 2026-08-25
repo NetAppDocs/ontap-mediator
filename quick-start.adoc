@@ -1,0 +1,13 @@
+---
+permalink: quick-start.html
+sidebar: sidebar
+keywords: ONTAP, mediator, quick start, install, download, package
+summary: "Quick start for ONTAP Mediator."
+---
+= Quick start for ONTAP Mediator
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Quick start for ONTAP Mediator.
+

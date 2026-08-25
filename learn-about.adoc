@@ -1,0 +1,13 @@
+---
+permalink: learn-about.html
+sidebar: sidebar
+keywords: ONTAP, mediator, install, download, package
+summary: "Learn about ONTAP Mediator."
+---
+= Learn about ONTAP Mediator
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn about ONTAP Mediator.
+
