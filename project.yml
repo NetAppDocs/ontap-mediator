@@ -23,7 +23,7 @@ sidebar:
           - title: Workflow
             url: /workflow-summary.html
           - title: Prepare to install or upgrade
-            url: /index.html
+            url: /prepare-install.html
           - title: Enable access to repositories
             url: /enable-access-repos-task.html
           - title: Download install package
