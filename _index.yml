@@ -1,7 +1,7 @@
 indexpage:
-  title: ONTAP Mediator 
-  lead: ONTAP Mediator is an external service application that assists NetApp ONTAP features—such as MetroCluster IP configurations and SnapMirror active sync—by providing third-party arbitrated health checks, startup/shutdown control, and automated failover capabilities.
-  summary: ONTAP Mediator is an external service application that assists NetApp ONTAP features—such as MetroCluster IP configurations and SnapMirror active sync—by providing third-party arbitrated health checks, startup/shutdown control, and automated failover capabilities. 
+  title: ONTAP Mediator documentation
+  lead: ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, serving as a ping proxy for controller liveliness, and providing synchronous node health query functionality to aid in quorum determination.  ONTAP Mediator can be configured to monitor SnapMirror active sync relationships and MetroCluster IP configurations. In MetroCluster IP, ONTAP Mediator can implement a Mediator-assisted unplanned switchover (MAUSO) in the case of a disaster.
+  summary: ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, serving as a ping proxy for controller liveliness, and providing synchronous node health query functionality to aid in quorum determination.  ONTAP Mediator can be configured to monitor SnapMirror active sync relationships and MetroCluster IP configurations. In MetroCluster IP, ONTAP Mediator can implement a Mediator-assisted unplanned switchover (MAUSO) in the case of a disaster. 
   keywords: ONTAP, Mediator, MetroCluster, SnapMirror, active sync, health check, startup, shutdown, failover, cloud Mediator 
   tiles: 
     - title: Get started
