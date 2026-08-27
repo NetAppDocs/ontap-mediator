@@ -49,19 +49,6 @@ Releases a lock-out on the API user account if the authentication retry limit wa
 +
 (Support only) Used to add the API user upon installation.
 
-
-== SCST and kernel updates
-
-ONTAP Mediator uses SCST to provide iSCSI for communication in MetroCluster IP configurations. The SCST package is a kernel module that is compiled during installation. 
-You might need to reinstall SCST after updates to the kernel. Alternatively, uninstall ONTAP Mediator, then re-install and reconfigure the ONTAP relationship. Refer to link:https://scst.sourceforge.net/[SCST: A Generic SCSI Target Subsystem for Linux^] to learn more about SCST. 
-
-NOTE: You should coordinate any updates to the server OS kernel with a maintenance window in ONTAP.
-
-== Support for HTTPS and iSCSI
-
-Beginning with ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS or iSCSI to monitor a MetroCluster IP configuration. You can choose to install ONTAP Mediator with support for both iSCSI and HTTPS or HTTPS only. If ONTAP Mediator is installed with support for HTTPS only, the SCST package is not installed. Refer to link:index.html#https-iscsi-installation[HTTPS and iSCSI installation options for ONTAP Mediator] for more information.
-
-
 == ONTAP Mediator for SnapMirror active sync
 
 ONTAP Mediator provides a persistent and fenced store for high availability (HA) metadata used by the ONTAP clusters in a SnapMirror active sync relationship. Additionally, ONTAP Mediator provides a synchronous node health query functionality to aid in quorum determination and serves as a ping proxy for controller liveliness detection.
@@ -88,7 +75,22 @@ Beginning with ONTAP 9.17.1, you can configure link:cloud-mediator-config-task.h
 [IMPORTANT]
 If you are using SnapMirror active sync and ONTAP Mediator or ONTAP Cloud Mediator with ONTAP 9.17.1, you should review the *Known problems and limitations* in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for important information about these configurations.
  
-== ONTAP Mediator for MetroCluster IP 
+
+== Learn about ONTAP Mediator for MetroCluster IP
+
+ONTAP Mediator provides mailbox LUNs to store state information about the MetroCluster IP nodes. These LUNs are co-located with ONTAP Mediator, which runs on a Linux host physically separate from the MetroCluster sites. The MetroCluster IP nodes can use the mailbox information to monitor the state of their disaster recovery (DR) partners and implement a Mediator-assisted unplanned switchover (MAUSO) in the case of a disaster. 
+
+== SCST and kernel updates
+
+ONTAP Mediator uses SCST to provide iSCSI for communication in MetroCluster IP configurations. The SCST package is a kernel module that is compiled during installation. 
+You might need to reinstall SCST after updates to the kernel. Alternatively, uninstall ONTAP Mediator, then re-install and reconfigure the ONTAP relationship. Refer to link:https://scst.sourceforge.net/[SCST: A Generic SCSI Target Subsystem for Linux^] to learn more about SCST. 
+
+NOTE: You should coordinate any updates to the server OS kernel with a maintenance window in ONTAP.
+
+== Support for HTTPS and iSCSI
+
+Beginning with ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS or iSCSI to monitor a MetroCluster IP configuration. You can choose to install ONTAP Mediator with support for both iSCSI and HTTPS or HTTPS only. If ONTAP Mediator is installed with support for HTTPS only, the SCST package is not installed. Refer to link:index.html#https-iscsi-installation[HTTPS and iSCSI installation options for ONTAP Mediator] for more information.
+
 
 
 
