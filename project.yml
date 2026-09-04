@@ -10,6 +10,8 @@ sidebar:
   entries:
   - title: ONTAP Mediator
     url: /index.html
+  - title: Release notes
+    url: /release-notes.html
   - title: Get started
     entries: 
     - title: Learn about ONTAP Mediator
@@ -38,5 +40,27 @@ sidebar:
             url: /upgrade-host-os-mediator-task.html
           - title: Post-installation configuration
             url: /post-install-config-concept.html
+          - title: Uninstall ONTAP Mediator
+            url: /uninstall-mediator-task.html            
+    - title: Administer ONTAP Mediator
+      entries:
+          - title: Manage ONTAP Mediator
+            entries:
+              - title: Change the ONTAP Mediator username and password
+                url: /change-username-password-task.html
+              - title: Start or stop ONTAP Mediator
+                url: /start-stop-mediator-task.html
+              - title: Verify ONTAP Mediator health
+                url: /verify-mediator-health-task.html
+              - title: Manage certificates
+                entries:
+                  - title: Regenerate a temporary self-signed certificate
+                    url: /regenerate-self-signed-certificate-task.html
+                  - title: Replace self-signed certificates with trusted certificates
+                    url: /replace-self-signed-certificates-task.html
+                  - title: Troubleshoot certificate-related issues
+                    url: /troubleshoot-certificate-issues-task.html
+          - title: Host OS maintenance
+            url: /host-maintenance-task.html
   - title: Legal notices
     url: /legal-notices.html
