@@ -58,7 +58,7 @@ sidebar:
                 url: /replace-self-signed-certificates-task.html
               - title: Troubleshoot certificate-related issues
                 url: /troubleshoot-certificate-issues-task.html
-        - title: Host OS maintenance
-          url: /host-maintenance-task.html
-- title: Legal notices
+          - title: Host OS maintenance
+            url: /host-maintenance-task.html
+  - title: Legal notices
     url: /legal-notices.html
