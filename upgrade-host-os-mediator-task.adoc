@@ -224,7 +224,7 @@ peer1::>
 ====
 
 .What’s next?
-link:uninstall-mediator-task.html[Uninstall ONTAP Mediator]
+link:post-install-config-concept.html[Post-installation configuration]
 
 .Related information
 * link:https://docs.netapp.com/us-en/ontap-cli/security-certificate-delete.html[security certificate delete^]

@@ -49,10 +49,6 @@ To skip signature check during installation, use this command: `./ontap-mediator
 +
 The installer creates the required accounts and installs the required packages. If the Mediator is already installed, it prompts you to upgrade.
 
-.What’s next?
-link:verify-install-task.html[Verify the ONTAP Mediator installation status]
-
-.Example ONTAP Mediator installation with HTTPS and iSCSI support (console output)
 [%collapsible]
 
 ====
@@ -862,6 +858,9 @@ input password again:`
 . Verify whether the import process has started with the `mokutil --list-new` and then reboot the system. The bootloader starts the EFI MOK manager.
 
 . Use the menus on the screen to turn on the SCST kernel module key. After booting, run `systemctl status mediator-scst`. Once the service starts, the SCST kernel modules are signed.
+
+.What’s next?
+link:verify-install-task.html[Verify the ONTAP Mediator installation status]
 
 // 2023 July 24, Public PR 1012
 // 2021-04-21 ONTAPEX-133437
