@@ -49,6 +49,8 @@ To skip signature check during installation, use this command: `./ontap-mediator
 +
 The installer creates the required accounts and installs the required packages. If the Mediator is already installed, it prompts you to upgrade.
 
+.What’s next?
+link:verify-install-task.html[Verify the ONTAP Mediator installation status]
 
 .Example ONTAP Mediator installation with HTTPS and iSCSI support (console output)
 [%collapsible]

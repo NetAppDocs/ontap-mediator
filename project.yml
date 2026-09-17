@@ -20,28 +20,26 @@ sidebar:
       url: /quick-start.html
   - title: Install and setup
     entries: 
-    - title: Install or upgrade ONTAP Mediator
-      entries:
-          - title: Workflow
-            url: /workflow-summary.html
-          - title: Prepare to install or upgrade
-            url: /prepare-install.html
-          - title: Enable access to repositories
-            url: /enable-access-repos-task.html
-          - title: Download install package
-            url: /download-install-pkg-task.html
-          - title: Verify code signature
-            url: /verify-code-signature-task.html
-          - title: Install the ONTAP Mediator package
-            url: /install-mediator-pkg-task.html  
-          - title: Verify installation
-            url: /verify-install-task.html  
-          - title: Upgrade the host OS and reinstall or upgrade ONTAP Mediator
-            url: /upgrade-host-os-mediator-task.html
-          - title: Post-installation configuration
-            url: /post-install-config-concept.html
-          - title: Uninstall ONTAP Mediator
-            url: /uninstall-mediator-task.html            
+    - title: Workflow
+      url: /workflow-summary.html
+    - title: Prepare to install or upgrade
+      url: /prepare-install.html
+    - title: Enable access to repositories
+      url: /enable-access-repos-task.html
+    - title: Download install package
+      url: /download-install-pkg-task.html
+    - title: Verify code signature
+      url: /verify-code-signature-task.html
+    - title: Install the ONTAP Mediator package
+      url: /install-mediator-pkg-task.html  
+    - title: Verify installation
+      url: /verify-install-task.html  
+    - title: Upgrade the host OS and reinstall or upgrade ONTAP Mediator
+      url: /upgrade-host-os-mediator-task.html
+    - title: Post-installation configuration
+      url: /post-install-config-concept.html
+    - title: Uninstall ONTAP Mediator
+      url: /uninstall-mediator-task.html            
   - title: Administer ONTAP Mediator
     entries:
           - title: Change the ONTAP Mediator username and password

@@ -69,6 +69,9 @@ NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only,
          tcp6  0   0 :::3260         :::*           LISTEN
 ----
 
+.What’s next?
+link:upgrade-host-os-mediator-task.html[Upgrade the host OS and reinstall or upgrade ONTAP Mediator]
+
 // 2021-04-21 ONTAPEX-133437
 // 2021-05-05 review comment in IDR-67
 // ontap-metrocluster issue #146, 7 march 2022

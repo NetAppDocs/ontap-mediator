@@ -50,6 +50,9 @@ ontap-mediator-1.12.0/ontap-mediator-1.12.0.tsr
 ontap-mediator-1.12.0/ontap-mediator-1.12.0.sig
 ----
 
+.What’s next?
+link:verify-code-signature-task.html[Verify the ONTAP Mediator code signature]
+
 // 2021-04-21 ONTAPEX-133437
 // 2021-05-05 review comment in IDR-67
 // ontap-metrocluster issue #146, 7 march 2022

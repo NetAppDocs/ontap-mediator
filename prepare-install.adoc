@@ -261,6 +261,9 @@ a| link:upgrade-host-os-mediator-task.html[Upgrade the host operating system and
 . [[step_2_uefi]]If the `mokutil` utility is not installed, run the following command: 
 +
 `yum install mokutil`
++
+.What’s next?
+link:enable-access-repos-task.html[Provide repository access for ONTAP Mediator installation]
 
 // 2026 Apr 3, ONTAPDOC-3478
 // 2026 Mar 02, GH 504 (ontap-metrocluster)

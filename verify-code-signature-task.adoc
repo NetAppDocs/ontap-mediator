@@ -103,6 +103,8 @@ Your machine performs the verification locally. You do not need to access TSA se
 openssl dgst -sha256 -verify ONTAP-Mediator-production.pub -signature ontap-mediator-1.12.0.sig ontap-mediator-1.12.0
 ----
 
+.What’s next?
+link:install-mediator-pkg-task.html[Install the ONTAP Mediator installation package]
 
 // 2021 Apr 21, ONTAPEX-133437
 // 2021 May 05, review comment in IDR-67

@@ -425,7 +425,8 @@ baseos                         Rocky Linux 8 - BaseOS
 
 ====
 
-
+.What’s next?
+link:download-install-pkg-task.html[Download the ONTAP Mediator installation package]
 
 // 2021-04-21 ONTAPEX-133437
 // 2021-05-05 review comment in IDR-67
