@@ -11,13 +11,13 @@ summary: "Operating system and SCST support information for ONTAP Mediator."
 [.lead]
 The ONTAP Mediator support matrix includes operating system and SCST version support information.
 
-== OS support matrix
-
 |===
 
-h| OS for ONTAP Mediator h| 1.12 h| 1.11 h| 1.10 h| 1.9.1 h| 1.9 h| 1.8 h| 1.7 h| 1.6 h| 1.5 h| 1.4 h| 1.3 h| 1.2 h| 1.1 h| 1.0
+
+h| OS for ONTAP Mediator h| 1.12.1 h| 1.12 h| 1.11 h| 1.10 h| 1.9.1 h| 1.9 h| 1.8 h| 1.7 h| 1.6 h| 1.5 h| 1.4 h| 1.3 h| 1.2 h| 1.1 h| 1.0
 
 a| RHEL 10.2
+a| Yes
 a| Yes
 a| No
 a| No
@@ -34,6 +34,7 @@ a| No
 a| No
 
 a| RHEL 10.1
+a| Compatible
 a| Compatible
 a| Yes
 a| No
@@ -53,6 +54,7 @@ a| RHEL 10.0
 a| Yes
 a| Yes
 a| Yes
+a| Yes
 a| No
 a| No
 a| No
@@ -66,6 +68,7 @@ a| No
 a| No
 
 a| RHEL 9.8
+a| Yes
 a| Yes
 a| No
 a| No
@@ -82,6 +85,7 @@ a| No
 a| No
 
 a| RHEL 9.7
+a| Compatible
 a| Compatible
 a| Yes
 a| No
@@ -101,6 +105,7 @@ a| RHEL 9.6
 a| Yes
 a| Yes
 a| Yes
+a| Yes
 a| No
 a| No
 a| No
@@ -117,8 +122,8 @@ a| RHEL 9.5
 a| No
 a| No
 a| No
-a| Yes
 a| No
+a| Yes
 a| No
 a| No
 a| No
@@ -131,6 +136,7 @@ a| No
 a| No
 
 a| RHEL 9.4
+a| Yes
 a| Yes
 a| Yes
 a| Yes
@@ -150,6 +156,7 @@ a| RHEL 9.3
 a| No
 a| No
 a| No
+a| No
 a| No 
 a| No  
 a| Yes
@@ -163,6 +170,7 @@ a| No
 a| No
 
 a| RHEL 9.2
+a| No
 a| No
 a| No
 a| No
@@ -184,6 +192,7 @@ a| No
 a| No
 a| No
 a| No
+a| No
 a| Yes  
 a| Yes
 a| Yes
@@ -195,6 +204,7 @@ a| No
 a| No
 
 a| RHEL 9.0
+a| No
 a| No
 a| No
 a| No
@@ -217,6 +227,7 @@ a| Yes
 a| Yes
 a| Yes
 a| Yes
+a| Yes
 a| No
 a| No
 a| No
@@ -227,6 +238,7 @@ a| No
 a| No
 
 a| RHEL 8.9
+a| No
 a| No
 a| No
 a| No
@@ -246,6 +258,7 @@ a| RHEL 8.8
 a| No
 a| No
 a| No
+a| No
 a| Yes
 a| Yes
 a| Yes
@@ -259,6 +272,7 @@ a| No
 a| No
 
 a| RHEL 8.7
+a| No
 a| No
 a| No
 a| No
@@ -278,6 +292,7 @@ a| RHEL 8.6
 a| No
 a| No
 a| No
+a| No
 a| Compatible 
 a| Compatible  
 a| Yes
@@ -294,6 +309,7 @@ a| RHEL 8.5
 a| No
 a| No
 a| No
+a| No
 a| Compatible 
 a| Compatible  
 a| Yes
@@ -307,6 +323,7 @@ a| No
 a| No
 
 a| RHEL 8.4
+a| No
 a| No
 a| No
 a| No
@@ -331,6 +348,7 @@ a| Obsolete
 a| Obsolete
 a| Obsolete
 a| Obsolete
+a| Obsolete
 a| Yes
 a| Yes
 a| Yes
@@ -340,6 +358,7 @@ a| No
 
 a| RHEL 8.2
 a| Obsolete
+a| Obsolete    
 a| Obsolete
 a| Obsolete
 a| Obsolete
@@ -355,6 +374,7 @@ a| No
 a| No
 
 a| RHEL 8.1
+a| Obsolete
 a| Obsolete
 a| Obsolete
 a| Obsolete
@@ -379,6 +399,7 @@ a| Obsolete
 a| Obsolete
 a| Obsolete
 a| Obsolete
+a| Obsolete
 a| Yes
 a| Yes
 a| Yes
@@ -387,6 +408,7 @@ a| Yes
 a| No 
 
 a| RHEL and CentOS 7.9
+a| Obsolete
 a| Obsolete
 a| Obsolete
 a| Obsolete
@@ -411,6 +433,7 @@ a| Obsolete
 a| Obsolete
 a| Obsolete
 a| Obsolete
+a| Obsolete
 a| Yes
 a| Yes
 a| Yes
@@ -427,6 +450,7 @@ a| Obsolete
 a| Obsolete
 a| Obsolete
 a| Obsolete
+a| Obsolete
 a| Yes
 a| Yes
 a| Yes
@@ -435,6 +459,7 @@ a| No
 a| No
 
 a| RHEL and CentOS 7.6 
+a| Obsolete
 a| Obsolete
 a| Obsolete
 a| Obsolete
@@ -469,6 +494,7 @@ a| N/A
 
 a| Rocky Linux 10
 a| Yes (10.2)
+a| Yes (10.2)
 a| Yes (10.0 and 10.1)
 a| Yes
 a| No
@@ -484,6 +510,7 @@ a| No
 a| No
 
 a| Rocky Linux 9
+a| Yes (9.8)
 a| Yes (9.8)
 a| Yes (9.7)
 a| Yes (9.6 and 9.4)
@@ -506,6 +533,7 @@ a| Yes (8.10)
 a| Yes (8.10)
 a| Yes (8.10)
 a| Yes (8.10)
+a| Yes (8.10)
 a| Yes (8.9)
 a| Yes (8.8)
 a| N/A 
@@ -516,6 +544,7 @@ a| N/A
 a| N/A 
 
 a| Oracle Linux 10
+a| Yes (10.1)
 a| Yes (10.1)
 a| Yes (10.0)
 a| No 
@@ -532,6 +561,7 @@ a| No
 a| No
 
 a| Oracle Linux 9
+a| Yes (9.8)
 a| Yes (9.7)
 a| Yes (9.6)
 a| No 
@@ -554,16 +584,17 @@ a| No
 * "Compatible" means that Red Hat no longer supports these RHEL versions, but ONTAP Mediator can still be installed on them.
 * ONTAP Mediator 1.6 adds support for Rocky Linux 9 and 8.
 * ONTAP Mediator 1.5 was the last supported release for RHEL 7.x branch operating systems.
-* CentOS 8 was removed for all releases due to its rebranching. CentOS Stream was deemed as not a suitable production target OS. No support is planned.
+* Centos 8 was removed for all releases due to its rebranching. Centos Stream was deemed as not a suitable production target OS. No support is planned.
 
 == SCST support matrix
 
-The following table shows the supported SCST version for each version of ONTAP Mediator.
+The following table shows the supported SCST version for each version of ONTAP Mediator. 
 
 [cols=2*,options="header"]
 |===
 | ONTAP Mediator version
 | Supported SCST version
+| ONTAP Mediator 1.12.1 | scst-3.10.tar.gz
 | ONTAP Mediator 1.12 | scst-3.10.tar.gz
 | ONTAP Mediator 1.11 | scst-3.9.tar.gz
 | ONTAP Mediator 1.10 | scst-3.9.tar.gz

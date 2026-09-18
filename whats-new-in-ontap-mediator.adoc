@@ -15,10 +15,27 @@ New enhancements to ONTAP Mediator are provided with each release.
 
 For SCST version information, see the link:support-matrix.html[Support matrix] page.
 
+== Enhancements
+
+For SCST version information, see the <<SCST support matrix>>.
+
 [cols="25,75"]
 |===
 
 h| ONTAP Mediator version h| Enhancements
+
+a| 1.12.1
+a| 
+* Support for RHEL:
+** Compatible: 10.1 and 9.7.
+** Recommended: 10.2, 10.0, 9.8, 9.6, 9.4, and 8.10.
+* Support for Rocky Linux 10.2, 9.8, and 8.10.
+* Support for Oracle Linux 10.1 and 9.8 with both rhck and uek kernels.
+* Beginning with ONTAP Mediator 1.12.1 and ONTAP 9.19.1, a single ONTAP Mediator instance configured with HTTPS can monitor the following configurations simultaneously:
+
+** A maximum of ten four-node or five eight-node MetroCluster IP configurations if installed on a host with an 8-core CPU and at least 16GB of RAM. See link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html#mediator-multiple-mccip[Use ONTAP Mediator to monitor multiple MetroCluster IP configurations^].
+** One four-node MetroCluster IP configuration and one SnapMirror active sync peer relationship if installed on a host with a 2-core CPU. See link:../snapmirror-active-sync/mediator-install-task.html#ontap-mediator[Configure the ONTAP Mediator for SnapMirror active sync].
+* Includes a new tool to repair a broken SCST installation. After installing ONTAP Mediator, you can find the tool at `/usr/local/bin/mediator_repair_scst`. You can use the tool after an OS upgrade, if the upgraded OS requires an SCST patch that is not available in the default SCST package.
 
 a| 1.12 
 a| 
@@ -27,7 +44,7 @@ a|
 ** Recommended: 10.2, 10.0, 9.8, 9.6, 9.4, and 8.10.
 * Support for Rocky Linux 10.2, 9.8, and 8.10.
 * Support for Oracle Linux 10.1 and 9.7 with both rhck and uek kernels.
-* Support for configuring an ONTAP Mediator that uses HTTPS for communication in MetroCluster IP configurations. HTTPS provides increased security by encrypting entire sessions using SSL/TLS. You can choose to install ONTAP Mediator that only uses the HTTPS protocol. The SCST package is not installed if this installation method is used. link:index.html#https-iscsi-installation[Learn more about HTTPS and iSCSI installation options for ONTAP Mediator].
+* Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS for communication in MetroCluster IP configurations. HTTPS provides increased security by encrypting entire sessions using SSL/TLS. You can choose to install ONTAP Mediator with support for HTTPS only. The SCST package is not installed if this installation method is used. link:index.html#https-iscsi-installation[Learn more about HTTPS and iSCSI installation options for ONTAP Mediator].
 
 a| 1.11 
 a| 
@@ -126,6 +143,7 @@ a|
 * Support for RHEL/CentOS 7.6.
 
 |===
+
 
 // 2025 July 28, ONTAPDOC-3177
 // 2025 July 28, ONTAPDOC-3054
