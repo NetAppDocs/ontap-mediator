@@ -13,7 +13,7 @@ To install or upgrade ONTAP Mediator, you must get the installation package and 
 
 .About this task
 
-include::../_include/https-only-mediator.adoc[]
+include::./_include/https-only-mediator.adoc[]
 
 * During installation or upgrade to ONTAP Mediator 1.12 or later, the installer prompts you to respond to the following:
 +

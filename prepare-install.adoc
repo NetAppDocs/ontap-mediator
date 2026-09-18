@@ -41,7 +41,7 @@ NOTE: ONTAP Mediator 1.8 and earlier is not compatible with Red Hat Enterprise L
 * In ONTAP Mediator, the SCST package is used to provide iSCSI for communication in MetroCluster IP configurations. The SCST package is a kernel module that is compiled during installation. Beginning with ONTAP 9.19.1 and Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS instead of iSCSI to monitor a MetroCluster IP configuration.
 
 
-include::../_include/https-only-mediator.adoc[]
+include::./_include/https-only-mediator.adoc[]
 
 
 == Host requirements 
@@ -137,7 +137,7 @@ Your OS must meet the following requirements:
 * User: Root access
 
 The following table shows the supported OSs for each version of ONTAP Mediator.
-include::../_include/mediator-linux-support.adoc[]
+include::./_include/mediator-linux-support.adoc[]
 
 .OS required packages
 
