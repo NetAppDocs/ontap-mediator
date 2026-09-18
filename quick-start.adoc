@@ -14,17 +14,17 @@ To get started with ONTAP Mediator, you install the software and configure it to
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install ONTAP Mediator
 
 [role="quick-margin-para"]
-Install the ONTAP Mediator package on your system and ensure that all required dependencies are met. Follow the installation guide for detailed steps.
+link:workflow-summary.html[Install ONTAP Mediator] on your system and ensure that all required dependencies are met. Follow the installation guide for detailed steps.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Verify the ONTAP Mediator installation
 
 [role="quick-margin-para"]
-Verify that the ONTAP Mediator installation was successful by checking the service status and reviewing the logs for any errors or warnings.
+link:verify-install-task.html[Verify that the ONTAP Mediator installation was successful] by checking the service status and reviewing the logs for any errors or warnings.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Configure ONTAP Mediator for your ONTAP environment
 
 [role="quick-margin-para"]
-Depending on whether you are using ONTAP Mediator for MetroCluster IP, SnapMirror active sync, or both, follow the appropriate configuration steps to ensure that all necessary settings are correctly applied.
+Depending on whether you want to link:use-mediator-snapmirror-metrocluster-task.html[use ONTAP Mediator for MetroCluster IP, SnapMirror active sync, or both], follow the appropriate configuration steps to ensure that all necessary settings are correctly applied.
 
 == What's next?
 You can now use ONTAP Mediator to monitor MetroCluster IP configurations, SnapMirror active sync configurations, or both. For more information, refer to the link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html[SnapMirror active sync documentation^] and link:https://docs.netapp.com/us-en/ontap-metrocluster/index.html[MetroCluster documentation^].
