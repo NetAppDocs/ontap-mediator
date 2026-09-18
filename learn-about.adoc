@@ -11,6 +11,8 @@ summary: "Learn about ONTAP Mediator."
 [.lead]
 ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. 
 
+In SnapMirror active sync relationships, ONTAP Mediator acts as the quorum witness, ensuring transparent failover while reducing the operational complexity of maintaining and managing a third site. In MetroCluster IP configurations, ONTAP Mediator can implement a Mediator-assisted unplanned switchover (MAUSO) in the case of a disaster.
+
 NOTE: This documentation refers to the on-premise version of ONTAP Mediator. For information about ONTAP Cloud Mediator, available beginning with ONTAP 9.17.1, see the link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html[SnapMirror active sync documentation^].
 
 == ONTAP Mediator services

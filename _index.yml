@@ -1,14 +1,11 @@
 indexpage:
   title: ONTAP Mediator documentation
-  lead: ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. In SnapMirror active sync relationships, ONTAP Mediator acts as the quorum witness, ensuring transparent failover while reducing the operational complexity of maintaining and managing a third site. In MetroCluster IP configurations, ONTAP Mediator can implement a Mediator-assisted unplanned switchover (MAUSO) in the case of a disaster.
-  summary: ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. In SnapMirror active sync relationships, ONTAP Mediator acts as the quorum witness, ensuring transparent failover while reducing the operational complexity of maintaining and managing a third site. In MetroCluster IP configurations, ONTAP Mediator can implement a Mediator-assisted unplanned switchover (MAUSO) in the case of a disaster. 
-  keywords: ONTAP, Mediator, MetroCluster, SnapMirror, active sync, health check, startup, shutdown, failover, cloud Mediator 
-  tiles: 
-    - title: Get started
-      links: 
-        - title: Learn about ONTAP Mediator
-          url: /learn-about.html
-        - title: Quick start
-          url: /quick-start.html
-          
-    # Next tile on this page (title/links)
+  lead: ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. 
+  summary: "ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness."
+  links:
+    - title: Learn about ONTAP Mediator
+      url: /learn-about.html
+    - title: Quick start
+      url: /quick-start.html
+
+  # Next tile on this page (title/links)
