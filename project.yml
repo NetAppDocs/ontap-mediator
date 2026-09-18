@@ -8,7 +8,7 @@ settings:
 
 sidebar: 
   entries:
-  - title: ONTAP Mediator
+  - title: ONTAP Mediator docs
     url: /index.html
   - title: Release notes
     entries:
