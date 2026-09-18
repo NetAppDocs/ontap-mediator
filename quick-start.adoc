@@ -11,17 +11,17 @@ summary: "Learn about ONTAP Mediator."
 [.lead]
 To get started with ONTAP Mediator, you install the software and configure it to work with your ONTAP environment.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] <Install ONTAP Mediator>
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install ONTAP Mediator
 
 [role="quick-margin-para"]
 Install the ONTAP Mediator package on your system and ensure that all required dependencies are met. Follow the installation guide for detailed steps.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] <Verify the ONTAP Mediator installation>
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Verify the ONTAP Mediator installation
 
 [role="quick-margin-para"]
 Verify that the ONTAP Mediator installation was successful by checking the service status and reviewing the logs for any errors or warnings.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] <Configure ONTAP Mediator for your ONTAP environment>
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Configure ONTAP Mediator for your ONTAP environment
 
 [role="quick-margin-para"]
 Depending on whether you are using ONTAP Mediator for MetroCluster IP, SnapMirror active sync, or both, follow the appropriate configuration steps to ensure that all necessary settings are correctly applied.
