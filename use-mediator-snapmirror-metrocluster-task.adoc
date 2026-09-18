@@ -1,0 +1,18 @@
+---
+permalink: use-mediator-snapmirror-metrocluster-task.html
+sidebar: sidebar
+keywords: ONTAP, mediator, install, download, package
+summary: "Learn about ONTAP Mediator."
+---
+= Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn how to use ONTAP Mediator to monitor SnapMirror active sync relationships and MetroCluster IP configurations.
+
+After ONTAP Mediator is installed and running, additional configuration tasks must be performed in the ONTAP storage system to use the ONTAP Mediator features:
+
+* To use ONTAP Mediator in a MetroCluster IP configuration, see link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/task_configuring_the_ontap_mediator_service_from_a_metrocluster_ip_configuration.html[Configure ONTAP Mediator from a MetroCluster IP configuration^].
+* To use ONTAP Mediator for SnapMirror active sync, see link:../snapmirror-active-sync/mediator-install-task.html[Install ONTAP Mediator and confirm the ONTAP cluster configuration].
+

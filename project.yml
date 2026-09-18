@@ -43,7 +43,11 @@ sidebar:
     - title: Post-installation configuration
       url: /post-install-config-concept.html
     - title: Uninstall ONTAP Mediator
-      url: /uninstall-mediator-task.html            
+      url: /uninstall-mediator-task.html    
+  - title: Use ONTAP Mediator
+    entries:
+    - title: Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP
+      url: /use-mediator-snapmirror-metrocluster-task.html
   - title: Administer ONTAP Mediator
     entries:
           - title: Change the ONTAP Mediator username and password
