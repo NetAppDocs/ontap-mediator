@@ -36,15 +36,24 @@ Alternatively, you can use the `--https-only` option in the `./ontap-mediator-1.
 
 . Run the installer and respond to the prompts as required: 
 +
-`./ontap-mediator-1.12.0/ontap-mediator-1.12.0 -y` 
+[source,cli]
+----
+./ontap-mediator-1.12.0/ontap-mediator-1.12.0 -y
+----
 +
+[source,cli]
 ----
 [root@mediator_host ~]# ./ontap-mediator-1.12.0/ontap-mediator-1.12.0 -y
 ----
 +
 [NOTE] 
 ====
-To skip signature check during installation, use this command: `./ontap-mediator-1.12.0/ontap-mediator-1.12.0 -y --skip-code-signature-check`
+To skip signature check during installation, use the following command:
++
+[source,cli]
+----
+./ontap-mediator-1.12.0/ontap-mediator-1.12.0 -y --skip-code-signature-check
+----
 ====
 +
 The installer creates the required accounts and installs the required packages. If the Mediator is already installed, it prompts you to upgrade.
@@ -819,14 +828,20 @@ NOTE: After installation, the system output provides the README files and key lo
 
 . Add the public key to the MOK list:
 +
-`mokutil --import /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/scst_module_key.der`
+[source,cli]
+----
+mokutil --import /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/scst_module_key.der
+----
 +
 [NOTE]
 ====
 You can leave the private key in its default location or move it to a secure location. You must keep the public key in its existing location so the Boot Manager can use it. For more information, see the README.module-signing file:
-
-`[root@hostname ~]# ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
-README.module-signing  scst_module_key.der  scst_module_key.priv`
++
+[source,cli]
+----
+[root@hostname ~]# ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
+README.module-signing  scst_module_key.der  scst_module_key.priv
+----
 ====
 
 . Reboot the host and use your device's UEFI Boot Manager to approve the new MOK. You'll need the passphrase provided for the `mokutil` utility in link:index.html#install-ontap-mediator-when-uefi-secure-boot-is-enabled[Install ONTAP Mediator when UEFI Secure Boot is enabled].
@@ -840,8 +855,10 @@ NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only,
 .Steps
 
 . During the build process a public/private key pair is generated in the `/opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/` directory, using the following command:
-+ 
-`[root@mediator-host ~]# ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
++
+[source,cli]
+----
+[root@mediator-host ~]# ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
 README.module-signing  scst_module_key.der  scst_module_key.priv
 [root@mediator-host ~]#`
  
@@ -855,9 +872,19 @@ input password again:`
  
 . The mokutil software requests a temporary password to be used for this key during the import process. 
 
-. Verify whether the import process has started with the `mokutil --list-new` and then reboot the system. The bootloader starts the EFI MOK manager.
-
-. Use the menus on the screen to turn on the SCST kernel module key. After booting, run `systemctl status mediator-scst`. Once the service starts, the SCST kernel modules are signed.
+. Verify whether the import process has started with the following command, and then reboot the system. The bootloader starts the EFI MOK manager.
++
+[source,cli]
+----
+mokutil --list-new
+----
++
+. Use the menus on the screen to turn on the SCST kernel module key. After booting, run the following command. Once the service starts, the SCST kernel modules are signed.
++
+[source,cli]
+----
+systemctl status mediator-scst
+----
 
 .What’s next?
 link:verify-install-task.html[Verify the ONTAP Mediator installation status]
