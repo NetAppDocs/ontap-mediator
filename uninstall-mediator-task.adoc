@@ -27,14 +27,19 @@ If you are unable to reach this command, you might need to run the command using
 
 . Uninstall ONTAP Mediator:
 +
-`uninstall_ontap_mediator`
+[source,cli]
+----
+uninstall_ontap_mediator
+----
 +
-....
+[source,cli]
+----
  [root@mediator-host ~]# uninstall_ontap_mediator
-
+----
+----
  ONTAP Mediator: Self Extracting Uninstaller
 
  + Removing ONTAP Mediator. (Log: /tmp/ontap_mediator.GmRGdA/uninstall_ontap_mediator/remove.log)
  + Remove successful.
  [root@mediator-host ~]#
-....
+----

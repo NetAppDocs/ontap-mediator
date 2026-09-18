@@ -56,35 +56,39 @@ VERSION="8.4 (Ootpa)"
 +
 NOTE: Perform the rest of the steps immediately after reinstalling ONTAP Mediator to prevent a loss of log files.
 +
-....
+[source,cli]
+----
 [rootmediator-host ~]# ontap-mediator-1.12.0/ontap-mediator-1.12.0
 
 ONTAP Mediator: Self Extracting Installer
 
   ..<snip installation>..
 [rootmediator-host ~]#
-....
+----
 
 . Stop ontap_mediator:
 +
-....
+[source,cli]
+----
 [rootmediator-host ~]# systemctl stop ontap_mediator
 [rootmediator-host ~]#
-....
+----
 
 . Replace the log files:
 +
-....
+[source,cli]
+----
 [rootmediator-host ~]# tar -xf ontap_mediator_log_backup.tgz -C /opt/netapp/lib/ontap_mediator
 [rootmediator-host ~]#
-....
+----
 
 . Start ontap_mediator:
 +
-....
+[source,cli]
+----
 [rootmediator-host ~]# systemctl start ontap_mediator
 [rootmediator-host ~]#
-....
+----
 
 . Reconnect all ONTAP clusters to the upgraded ONTAP Mediator:
 

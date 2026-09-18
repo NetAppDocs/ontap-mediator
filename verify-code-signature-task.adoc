@@ -68,7 +68,10 @@ openssl ocsp -issuer csc-prod-chain-ONTAP-Mediator.pem -CAfile csc-prod-chain-ON
 
 . Verify the trust chain of the CSC and expiration dates against the local host: 
 +
-`openssl verify`
+[source,cli]
+----
+openssl verify
+----
 +
 NOTE: The `openssl` version from the PATH must have a valid `cert.pem` (not self-signed).
 +
@@ -84,11 +87,17 @@ openssl verify -untrusted tsa-prod-chain-ONTAP-Mediator.pem -CApath ${OPENSSLDIR
 ====
 .OpenSSL 3.x
 --
-`openssl ts -verify -data ontap-mediator-1.12.0.sig -in ontap-mediator-1.12.0.sig.tsr -CAfile tsa-prod-chain-ONTAP-Mediator.pem -untrusted tsa-prod-ONTAP-Mediator.pem`
+[source,cli]
+----
+openssl ts -verify -data ontap-mediator-1.12.0.sig -in ontap-mediator-1.12.0.sig.tsr -CAfile tsa-prod-chain-ONTAP-Mediator.pem -untrusted tsa-prod-ONTAP-Mediator.pem
+----
 --
 .OpenSSL 1.x
 --
-`openssl ts -verify -data ontap-mediator-1.12.0 -in ontap-mediator-1.12.0.tsr -CAfile tsa-prod-chain-ONTAP-Mediator.pem -partial_chain`
+[source,cli]
+----
+openssl ts -verify -data ontap-mediator-1.12.0 -in ontap-mediator-1.12.0.tsr -CAfile tsa-prod-chain-ONTAP-Mediator.pem -partial_chain
+----
 --
 ====
 +
@@ -97,8 +106,12 @@ Your machine performs the verification locally. You do not need to access TSA se
 
 . Verify signatures against the key:  
 +
-`openssl -dgst -verify`
+[source,cli]
+----
+openssl -dgst -verify
+----
 +
+[source,cli]
 ----
 openssl dgst -sha256 -verify ONTAP-Mediator-production.pub -signature ontap-mediator-1.12.0.sig ontap-mediator-1.12.0
 ----

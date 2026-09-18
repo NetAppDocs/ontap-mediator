@@ -235,7 +235,10 @@ To install ONTAP Mediator with UEFI Secure Boot enabled, you must register a sec
 
 . [[step_1_uefi]]Check if UEFI Secure Boot is enabled on your system:
 +
-`mokutil --sb-state`
+[source,cli]
+----
+mokutil --sb-state
+----
 +
 The results indicate whether UEFI Secure Boot is enabled on this system. 
 +
@@ -260,7 +263,10 @@ a| link:upgrade-host-os-mediator-task.html[Upgrade the host operating system and
 
 . [[step_2_uefi]]If the `mokutil` utility is not installed, run the following command: 
 +
-`yum install mokutil`
+[source,cli]
+----
+yum install mokutil
+----
 +
 .What’s next?
 link:enable-access-repos-task.html[Provide repository access for ONTAP Mediator installation]

@@ -15,7 +15,10 @@ After you install ONTAP Mediator, verify that it is running successfully.
 
 . View the status of ONTAP Mediator:
 
-.. `systemctl status ontap_mediator`
+.. [source,cli]
+----
+systemctl status ontap_mediator
+----
 +
 ----
 [root@mediator_host ~]# systemctl status ontap_mediator
@@ -37,7 +40,10 @@ CGroup: /system.slice/ontap_mediator.service
 ----
 
 +
-.. `systemctl status mediator-scst`
+.. [source,cli]
+----
+systemctl status mediator-scst
+----
 +
 NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only, the SCST package is not installed and you can skip this step.
 +
@@ -57,7 +63,10 @@ NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only,
 
 . Confirm the ports that are used by ONTAP Mediator: 
 +
-`netstat`
+[source,cli]
+----
+netstat
+----
 +
 ----
 [root@scspr1905507001 ~]# netstat -anlt | grep -E '3260|31784'

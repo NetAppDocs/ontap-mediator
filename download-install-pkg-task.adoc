@@ -35,7 +35,10 @@ If your system does not have internet access, make sure the installer can access
 
 . Unzip the installer package: 
 +
-`tar xvfz ontap-mediator-1.12.0.tgz`
+[source,cli]
+----
+tar xvfz ontap-mediator-1.12.0.tgz
+----
 +
 ----
 ontap-mediator-1.12.0/

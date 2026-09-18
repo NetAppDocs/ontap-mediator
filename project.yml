@@ -11,7 +11,13 @@ sidebar:
   - title: ONTAP Mediator
     url: /index.html
   - title: Release notes
-    url: /release-notes.html
+    entries:
+    - title: Release notes
+      url: /release-notes.html
+    - title: What's new in ONTAP Mediator
+      url: /whats-new-in-ontap-mediator.html
+    - title: Support matrix
+      url: /support-matrix.html
   - title: Get started
     entries: 
     - title: Learn about ONTAP Mediator
