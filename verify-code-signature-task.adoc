@@ -50,17 +50,20 @@ a| `tsa-prod-chain-ONTAP-Mediator.pem`  a| The public certificate CA Chain for t
 
 .. Find the OCSP URL for the certificate. Developer certificates might not provide a URI:
 +
+[source,cli]
 ----
 openssl x509 -noout -ocsp_uri -in csc-prod-chain-ONTAP-Mediator.pem
 ----
 .. Generate an OCSP request for the certificate. 
 +
+[source,cli]
 ----
 openssl ocsp -issuer csc-prod-chain-ONTAP-Mediator.pem -CAfile csc-prod-chain-ONTAP-Mediator.pem -cert csc-prod-ONTAP-Mediator.pem  -reqout req.der
 ----
 	
 .. Connect to the OCSP Manager to send the OCSP request: 
 +
+[source,cli]
 ----
 openssl ocsp -issuer csc-prod-chain-ONTAP-Mediator.pem -CAfile csc-prod-chain-ONTAP-Mediator.pem -cert csc-prod-ONTAP-Mediator.pem  -url ${ocsp_uri} -resp_text -respout resp.der -verify_other csc-prod-chain-ONTAP-Mediator.pem
 ----
@@ -75,10 +78,13 @@ openssl verify
 +
 NOTE: The `openssl` version from the PATH must have a valid `cert.pem` (not self-signed).
 +
+[source,cli]
 ----
-openssl verify -untrusted csc-prod-chain-ONTAP-Mediator.pem -CApath ${OPENSSLDIR} csc-prod-ONTAP-Mediator.pem  # Failure action: The Code-Signature-Check certificate has expired or is invalid. Download a newer version of the ONTAP Mediator.
-openssl verify -untrusted tsa-prod-chain-ONTAP-Mediator.pem -CApath ${OPENSSLDIR} tsa-prod-ONTAP-Mediator.pem  # Failure action: The Time-Stamp certificate has expired or is invalid. Download a newer version of the ONTAP Mediator.
+openssl verify -untrusted csc-prod-chain-ONTAP-Mediator.pem -CApath ${OPENSSLDIR} csc-prod-ONTAP-Mediator.pem
+openssl verify -untrusted tsa-prod-chain-ONTAP-Mediator.pem -CApath ${OPENSSLDIR} tsa-prod-ONTAP-Mediator.pem
 ----
++
+The command fails if the code-signature check certificate or time-stamp certificate is expired or invalid. Download a newer version of the ONTAP Mediator.
     
 . Verify the `ontap-mediator-1.12.1.sig.tsr` and `ontap-mediator-1.12.1.tsr` files using the associated certificates: 
 +

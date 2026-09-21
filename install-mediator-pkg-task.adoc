@@ -833,9 +833,14 @@ You can leave the private key in its default location or move it to a secure loc
 +
 [source,cli]
 ----
-[root@hostname ~]# ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
-README.module-signing  scst_module_key.der  scst_module_key.priv
+ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
 ----
+
+Example output:
+
+....
+README.module-signing  scst_module_key.der  scst_module_key.priv
+....
 ====
 
 . Reboot the host and use your device's UEFI Boot Manager to approve the new MOK. You'll need the passphrase provided for the `mokutil` utility in link:index.html#install-ontap-mediator-when-uefi-secure-boot-is-enabled[Install ONTAP Mediator when UEFI Secure Boot is enabled].
@@ -848,24 +853,30 @@ NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only,
 
 .Steps
 
-. During the build process a public/private key pair is generated in the `/opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/` directory, using the following command:
+. During the build process a public/private key pair is generated in the `/opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/` directory. Run the following command to view the generated keys:
 +
 [source,cli]
 ----
-[root@mediator-host ~]# ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
+ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
+----
++
+Example output:
++
+....
 README.module-signing  scst_module_key.der  scst_module_key.priv
-[root@mediator-host ~]#`
- 
-. Start the process of importing the public key into the UEFI key repository by running the following commands:
+....
 +
-`[root@mediator-host ~]# mokutil --import /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/scst_module_key.der
-input password:
-input password again:`
+. Start the process of importing the public key into the UEFI key repository by running the following command:
 +
-`[root@mediator-host ~]#`
- 
-. The mokutil software requests a temporary password to be used for this key during the import process. 
-
+[source,cli]
+----
+mokutil --import /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/scst_module_key.der
+----
++
+The `mokutil` utility prompts you to enter a password twice.
++
+. The mokutil software requests a temporary password to be used for this key during the import process.
++
 . Verify whether the import process has started with the following command, and then reboot the system. The bootloader starts the EFI MOK manager.
 +
 [source,cli]

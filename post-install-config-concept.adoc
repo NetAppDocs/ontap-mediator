@@ -23,8 +23,11 @@ ONTAP Mediator supports several configurable security settings. The default valu
 All values that are placed in the `ontap_mediator.user_config.yaml` will override the default values and be maintained across all ONTAP Mediator upgrades.
 
 After you modify `ontap_mediator.user_config.yaml`, restart ONTAP Mediator:
-
-`systemctl restart ontap_mediator`
++
+[source,cli]
+----
+systemctl restart ontap_mediator
+----
 
 == Modify ONTAP Mediator attributes
 
@@ -180,13 +183,19 @@ To disable this feature and use the default disk space, perform the following st
 +
 . Restart the Mediator:
 +
-.. `cat /opt/netapp/lib/ontap_mediator/tools/mediator_env | grep "RESERVE_LOG_SPACE"`
+.. [source,cli]
+----
+cat /opt/netapp/lib/ontap_mediator/tools/mediator_env | grep "RESERVE_LOG_SPACE"
+----
 +
 ....
 RESERVE_LOG_SPACE=0
 ....
 +
-.. `systemctl restart ontap_mediator`
+.. [source,cli]
+----
+systemctl restart ontap_mediator
+----
 --
 
 To re-enable the feature, change the value from 0 to 1 and restart the Mediator.

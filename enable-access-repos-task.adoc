@@ -112,7 +112,12 @@ Repository 'ol-10-for-x86_64-baseos-rpms' is enabled for this system.
 Repository 'ol-10-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 
-. Run the `yum repolist` command.
+. Run the following command to list the enabled repositories:
+
+[source,cli]
+----
+yum repolist
+----
 +
 The newly subscribed repositories should appear in the list.
 ====
@@ -147,7 +152,12 @@ Repository 'ol-9-for-x86_64-baseos-rpms' is enabled for this system.
 Repository 'ol-9-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 
-. Run the `yum repolist` command.
+. Run the following command to list the enabled repositories:
+
+[source,cli]  
+----   
+yum repolist
+----
 +
 The newly subscribed repositories should appear in the list.
 ====
@@ -181,7 +191,12 @@ Repository 'rhel-10-for-x86_64-baseos-rpms' is enabled for this system.
 Repository 'rhel-10-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 
-. Run the `yum repolist` command.
+. Run the following command to list the enabled repositories:
+
+[source,cli]
+----
+yum repolist
+----
 +
 The newly subscribed repositories should appear in the list.
 ====
@@ -216,7 +231,12 @@ Repository 'rhel-9-for-x86_64-baseos-rpms' is enabled for this system.
 Repository 'rhel-9-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 
-. Run the `yum repolist` command.
+. Run the following command to list the enabled repositories:
+
+[source,cli]
+----
+yum repolist
+----
 +
 The newly subscribed repositories should appear in the list.
 ====
@@ -251,7 +271,12 @@ Repository 'rhel-8-for-x86_64-baseos-rpms' is enabled for this system.
 Repository 'rhel-8-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 
-. Run the `yum repolist` command.
+. Run the following command to list the enabled repositories:
+
+[source,cli]
+----
+yum repolist
+----
 +
 The newly subscribed repositories should appear in the list.
 ====
@@ -278,7 +303,12 @@ The following example shows the execution of this command:
 [root@localhost ~]# subscription-manager repos --enable rhel-7-server-optional-rpms
 Repository 'rhel-7-server-optional-rpms' is enabled for this system.
 ----
-. Run the `yum repolist` command.
+. Run the following command to list the enabled repositories:
+
+[source,cli]
+----
+yum repolist
+----
 +
 The following example shows the execution of this command. The "rhel-7-server-optional-rpms" repository should appear in the list.
 +
@@ -323,7 +353,12 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 enabled=1
 ----
 
-. Run the `yum repolist` command.
+. Run the following command to list the enabled repositories:
+
+[source,cli]
+----
+yum repolist
+----
 +
 The following example shows the execution of this command. The CentOS-7.6.1810 - Base repository should appear in the list.
 +

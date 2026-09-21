@@ -19,13 +19,16 @@ https://mysupport.netapp.com/site/products/all/details/ontap-mediator/downloads-
 
 . Place the Mediator installation package in the current working directory:
 +
+[source,cli]
 ----
-[root@sdot-r730-0003a-d6 ~]# ls ontap-mediator-1.12.1.0.tgz
+ls ontap-mediator-1.12.1.0.tgz
 ----
 +
-----
+Example output:
++
+....
 ontap-mediator-1.12.1.0.tgz
-----
+....
 +
 NOTE: For ONTAP Mediator versions 1.4 and earlier, the installer is named `ontap-mediator`.
 +
@@ -40,7 +43,9 @@ If your system does not have internet access, make sure the installer can access
 tar xvfz ontap-mediator-1.12.1.0.tgz
 ----
 +
-----
+Example output:
++
+....
 ontap-mediator-1.12.1.0/
 ontap-mediator-1.12.1.0/csc-prod-ONTAP-Mediator.pem
 ontap-mediator-1.12.1.0/csc-prod-chain-ONTAP-Mediator.pem
@@ -51,7 +56,7 @@ ontap-mediator-1.12.1.0/ontap-mediator-1.12.1.0
 ontap-mediator-1.12.1.0/ontap-mediator-1.12.1.0.sig.tsr
 ontap-mediator-1.12.1.0/ontap-mediator-1.12.1.0.tsr
 ontap-mediator-1.12.1.0/ontap-mediator-1.12.1.0.sig
-----
+....
 
 .What’s next?
 link:verify-code-signature-task.html[Verify the ONTAP Mediator code signature]
