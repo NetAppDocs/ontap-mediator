@@ -23,19 +23,9 @@ To upgrade the host OS for ONTAP Mediator with SCST installed to a later version
 
 . Back up the log files:
 +
-[source,cli]
-----
-tar -czf ontap_mediator_file_backup.tgz -C /opt/netapp/lib/ontap_mediator ./log ./ontap_mediator/server_config/ontap_mediator.user_config.yaml
-----
-+
-[source,cli]
-----
-tar -tf ontap_mediator_file_backup.tgz
-----
-+
-Example output:
-+
 ....
+[rootmediator-host ~]# tar -czf ontap_mediator_file_backup.tgz -C /opt/netapp/lib/ontap_mediator ./log ./ontap_mediator/server_config/ontap_mediator.user_config.yaml
+[rootmediator-host ~]# tar -tf ontap_mediator_file_backup.tgz
 ./log/
 ./log/ontap_mediator.log
 ./log/scstadmin.log
@@ -45,83 +35,57 @@ Example output:
 ./log/scst.log
 ./log/ontap_mediator_syslog.log
 ./ontap_mediator/server_config/ontap_mediator.user_config.yaml
+[rootmediator-host ~]#
 ....
-+
+
 . Perform upgrade with leapp-upgrade tool:
 +
-[source,cli]
-----
-leapp preupgrade --target 8.4
-----
-
-Example output:
-
 ....
-..<snip upgrade checks>..
-....
-
-[source,cli]
-----
-leapp upgrade --target 8.4
-----
-
-Example output:
-
-....
-..<snip upgrade>..
-....
-
-[source,cli]
-----
-cat /etc/os-release | head -2
-----
-
-Example output:
-
-....
+[rootmediator-host ~]# leapp preupgrade --target 8.4
+  ..<snip upgrade checks>..
+  ..<fix issues found>..
+[rootmediator-host ~]# leapp upgrade --target 8.4
+  ..<snip upgrade>..
+[rootmediator-host ~]# cat /etc/os-release | head -2
 NAME="Red Hat Enterprise Linux"
 VERSION="8.4 (Ootpa)"
+[rootmediator-host ~]#
 ....
 
 . Reinstall ONTAP Mediator:
 +
 NOTE: Perform the rest of the steps immediately after reinstalling ONTAP Mediator to prevent a loss of log files.
 +
-[source,cli]
-----
-./ontap-mediator-1.12.0/ontap-mediator-1.12.0
-----
-+
-Example output:
-+
 ....
+[rootmediator-host ~]# ontap-mediator-1.12.1/ontap-mediator-1.12.1
+
 ONTAP Mediator: Self Extracting Installer
 
   ..<snip installation>..
 [rootmediator-host ~]#
-----
+....
 
 . Stop ontap_mediator:
 +
-[source,cli]
-----
-systemctl stop ontap_mediator
-----
-+
+....
+[rootmediator-host ~]# systemctl stop ontap_mediator
+[rootmediator-host ~]#
+....
+
 . Replace the log files:
 +
-[source,cli]
-----
-tar -xf ontap_mediator_log_backup.tgz -C /opt/netapp/lib/ontap_mediator
-----
-+
+....
+[rootmediator-host ~]# tar -xf ontap_mediator_file_backup.tgz -C /opt/netapp/lib/ontap_mediator
+[rootmediator-host ~]#
+....
+
 . Start ontap_mediator:
 +
-[source,cli]
-----
-systemctl start ontap_mediator
-----
-+
+....
+[rootmediator-host ~]# systemctl start ontap_mediator
+[rootmediator-host ~]#
+....
+
 . Reconnect all ONTAP clusters to the upgraded ONTAP Mediator:
 
 [role="tabbed-block"]
@@ -258,9 +222,6 @@ peer1::>
 ....
 --
 ====
-
-.What’s next?
-link:post-install-config-concept.html[Post-installation configuration]
 
 .Related information
 * link:https://docs.netapp.com/us-en/ontap-cli/security-certificate-delete.html[security certificate delete^]
