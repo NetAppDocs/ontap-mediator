@@ -23,7 +23,7 @@ ONTAP Mediator supports several configurable security settings. The default valu
 All values that are placed in the `ontap_mediator.user_config.yaml` will override the default values and be maintained across all ONTAP Mediator upgrades.
 
 After you modify `ontap_mediator.user_config.yaml`, restart ONTAP Mediator:
-+
+
 [source,cli]
 ----
 systemctl restart ontap_mediator
