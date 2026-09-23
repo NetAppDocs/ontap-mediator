@@ -176,14 +176,17 @@ The RESERVE_LOG_SPACE is controlled by specific settings. By default, the ONTAP 
 
 To disable this feature and use the default disk space, perform the following steps:
 
---
+.Steps
+
 . Change the value of RESERVE_LOG_SPACE from 1 to 0 in the following file:
 +
 `/opt/netapp/lib/ontap_mediator/tools/mediator_env`
 +
 . Restart the Mediator:
 +
-.. [source,cli]
+.. Run the following command:
++
+[source,cli]
 ----
 cat /opt/netapp/lib/ontap_mediator/tools/mediator_env | grep "RESERVE_LOG_SPACE"
 ----
@@ -192,15 +195,19 @@ cat /opt/netapp/lib/ontap_mediator/tools/mediator_env | grep "RESERVE_LOG_SPACE"
 RESERVE_LOG_SPACE=0
 ....
 +
-.. [source,cli]
+.. Restart ONTAP Mediator:
++
+[source,cli]
 ----
 systemctl restart ontap_mediator
 ----
---
 
-To re-enable the feature, change the value from 0 to 1 and restart the Mediator.
+[NOTE]
+====
+* To re-enable the feature, change the value from 0 to 1 and restart the Mediator.
 
-NOTE: Toggling between disk spaces does not purge existing logs.  All previous logs are backed up and then moved to the current disk space after toggling and restarting the Mediator.
+* Toggling between disk spaces does not purge existing logs.  All previous logs are backed up and then moved to the current disk space after toggling and restarting the Mediator.
+====
 
 // 2021 Apr 21, ONTAPEX-133437
 // 2021 May 05, review comment in IDR-67
