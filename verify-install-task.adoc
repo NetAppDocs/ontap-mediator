@@ -14,13 +14,11 @@ After you install ONTAP Mediator, verify that it is running successfully.
 .Steps
 
 . View the status of ONTAP Mediator:
-
-.. [source,cli]
++ 
+[source,cli]
 ----
 systemctl status ontap_mediator
 ----
-+
-Example output:
 +
 ....
  ontap_mediator.service - ONTAP Mediator
@@ -36,16 +34,16 @@ CGroup: /system.slice/ontap_mediator.service
       ├─286716 /opt/netapp/lib/ontap_mediator/pyenv/bin/uwsgi --ini /opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini
       └─286717 /opt/netapp/lib/ontap_mediator/pyenv/bin/uwsgi --ini /opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini
 ....
+
+
+. View the SCST status:
 +
-+
-.. [source,cli]
+[source,cli]
 ----
 systemctl status mediator-scst
 ----
 +
 NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only, the SCST package is not installed and you can skip this step.
-+
-Example output:
 +
 ....
    Loaded: loaded (/etc/systemd/system/mediator-scst.service; enabled; vendor preset: disabled)
@@ -57,15 +55,13 @@ Example output:
    CGroup: /system.slice/mediator-scst.service
            └─286662 /usr/local/sbin/iscsi-scstd
 ....
-+
+
 . Confirm the ports that are used by ONTAP Mediator: 
 +
 [source,cli]
 ----
 netstat -anlt | grep -E '3260|31784'
 ----
-+
-Example output:
 +
 ....
          tcp   0   0 0.0.0.0:31784   0.0.0.0:*      LISTEN

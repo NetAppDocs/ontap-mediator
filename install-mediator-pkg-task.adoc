@@ -24,7 +24,9 @@ Do you wish to install ONTAP Mediator with iSCSI and HTTPS support? Y(es)/n(o):`
 
 ** Respond `No` if you plan to only use ONTAP Mediator for SnapMirror active sync, or if you plan to configure ONTAP Mediator with HTTPS to monitor one or more MetroCluster IP configurations. 
 +
-Alternatively, you can use the `--https-only` option in the `./ontap-mediator-1.12.1/ontap-mediator-1.12.1 -y` command to specify HTTPS only.
+Alternatively, you can use the `--https-only` option in the `./ontap-mediator-1.12.1/ontap-mediator-1.12.1` command to specify HTTPS only.
+
+* For automation use cases, you can use the `./ontap-mediator-1.12.1/ontap-mediator-1.12.1 -y` command to skip the installer prompts.
 
 .Steps
 
@@ -32,28 +34,24 @@ Alternatively, you can use the `--https-only` option in the `./ontap-mediator-1.
 +
 [source,cli]
 ----
-./ontap-mediator-1.12.1/ontap-mediator-1.12.1 -y
+./ontap-mediator-1.12.1/ontap-mediator-1.12.1
 ----
 +
-[source,cli]
 ----
-[root@mediator_host ~]# ./ontap-mediator-1.12.1/ontap-mediator-1.12.1 -y
+[root@mediator_host ~]# ./ontap-mediator-1.12.1/ontap-mediator-1.12.1
 ----
 +
 [NOTE] 
 ====
-To skip signature check during installation, use the following command:
-+
-[source,cli]
-----
-./ontap-mediator-1.12.1/ontap-mediator-1.12.1 -y --skip-code-signature-check
-----
+To skip signature check during installation, use the
+`./ontap-mediator-1.12.1/ontap-mediator-1.12.1 --skip-code-signature-check` command
 ====
 +
 The installer creates the required accounts and installs the required packages. If the Mediator is already installed, it prompts you to upgrade.
 
-[%collapsible]
 
+.Example ONTAP Mediator installation with HTTPS and iSCSI support (console output)
+[%collapsible]
 ====
 ----
 
@@ -437,15 +435,7 @@ OS package installations finished
 
 ====
 ----
-
-Upgrade from 1.11 to 1.12 (lower version to higher version):
-
- 
-
-Plain Text
-
-
-[root@mediator_host ~]# ontap-mediator-1.11.0/ontap-mediator-1.11.0 -y
+[root@mediator_host ~]# ontap-mediator-1.11.0/ontap-mediator-1.11.0 
 
 ONTAP Mediator: Self Extracting Installer
 
@@ -668,7 +658,7 @@ OS package installations finished
 ====
 ----
 
-[root@mediator_host~]# ontap-mediator-1.11.0/ontap-mediator-1.11.0 -y
+[root@mediator_host~]# ontap-mediator-1.11.0/ontap-mediator-1.11.0 
 
 ONTAP Mediator: Self Extracting Installer
 
@@ -811,12 +801,17 @@ NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only,
 
 . Follow the instructions in the README file to sign the SCST kernel module:
 +
-`/opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/README.module-signing`
+[source,cli]
+----
+/opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/README.module-signing
+----
 
 . Locate the required keys: 
 +
-`/opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys`
-
+[source,cli]
+----
+/opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys
+----
 +
 NOTE: After installation, the system output provides the README files and key location.
 
@@ -830,17 +825,8 @@ mokutil --import /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/scs
 [NOTE]
 ====
 You can leave the private key in its default location or move it to a secure location. You must keep the public key in its existing location so the Boot Manager can use it. For more information, see the README.module-signing file:
-+
-[source,cli]
-----
-ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
-----
 
-Example output:
-
-....
-README.module-signing  scst_module_key.der  scst_module_key.priv
-....
+`[root@hostname ~]# ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/ README.module-signing scst_module_key.der scst_module_key.priv`
 ====
 
 . Reboot the host and use your device's UEFI Boot Manager to approve the new MOK. You'll need the passphrase provided for the `mokutil` utility in link:index.html#install-ontap-mediator-when-uefi-secure-boot-is-enabled[Install ONTAP Mediator when UEFI Secure Boot is enabled].
@@ -865,7 +851,7 @@ Example output:
 ....
 README.module-signing  scst_module_key.der  scst_module_key.priv
 ....
-+
+
 . Start the process of importing the public key into the UEFI key repository by running the following command:
 +
 [source,cli]
@@ -876,14 +862,14 @@ mokutil --import /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/scs
 The `mokutil` utility prompts you to enter a password twice.
 +
 . The mokutil software requests a temporary password to be used for this key during the import process.
-+
+
 . Verify whether the import process has started with the following command, and then reboot the system. The bootloader starts the EFI MOK manager.
 +
 [source,cli]
 ----
 mokutil --list-new
 ----
-+
+
 . Use the menus on the screen to turn on the SCST kernel module key. After booting, run the following command. Once the service starts, the SCST kernel modules are signed.
 +
 [source,cli]
