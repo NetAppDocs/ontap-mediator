@@ -36,11 +36,7 @@ To install or upgrade ONTAP Mediator, you must get the installation package and 
 [role="quick-margin-para"]
 After you install ONTAP Mediator, verify that it is running successfully.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:upgrade-host-os-mediator-task.html[Optionally, upgrade the host OS and reinstall or upgrade ONTAP Mediator]
-[role="quick-margin-para"]
-If your ONTAP Mediator version has SCST installed and you need to upgrade your host OS, you uninstall and reinstall ONTAP Mediator as part of the host upgrade. You can reinstall the current version of ONTAP Mediator or a new version if one is available. You can skip this step if you don't need to upgrade your OS, or if the SCST package is not installed because you installed ONTAP Mediator with support for HTTPS and not iSCSI. 
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-8.png[Eight]link:post-install-config-concept.html[Perform post-installation configuration tasks]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:post-install-config-concept.html[Perform post-installation configuration tasks]
 [role="quick-margin-para"]
 After ONTAP Mediator is installed and running, additional configuration tasks must be performed to use the ONTAP Mediator features.
 

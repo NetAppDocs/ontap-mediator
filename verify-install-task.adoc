@@ -72,7 +72,7 @@ netstat -anlt | grep -E '3260|31784'
 ....
 
 .What’s next?
-link:upgrade-host-os-mediator-task.html[Upgrade the host OS and reinstall or upgrade ONTAP Mediator]
+link:post-install-config-concept.html[Perform post-installation configuration tasks]
 
 // 2021-04-21 ONTAPEX-133437
 // 2021-05-05 review comment in IDR-67

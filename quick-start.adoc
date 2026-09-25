@@ -14,7 +14,7 @@ To get started with ONTAP Mediator, you install the software and configure it to
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install ONTAP Mediator
 
 [role="quick-margin-para"]
-link:workflow-summary.html[Install ONTAP Mediator] on your system and ensure that all required dependencies are met. You can also use this workflow to perform an upgrade of ONTAP Mediator.
+link:workflow-summary.html[Install ONTAP Mediator] on your system and ensure that all required dependencies are met.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Verify the ONTAP Mediator installation
 

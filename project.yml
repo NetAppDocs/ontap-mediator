@@ -26,7 +26,7 @@ sidebar:
     entries: 
     - title: Workflow
       url: /workflow-summary.html
-    - title: Prepare to install or upgrade
+    - title: Prepare to install
       url: /prepare-install.html
     - title: Enable access to repositories
       url: /enable-access-repos-task.html
@@ -38,8 +38,6 @@ sidebar:
       url: /install-mediator-pkg-task.html  
     - title: Verify installation
       url: /verify-install-task.html  
-    - title: Upgrade the host OS and reinstall or upgrade ONTAP Mediator
-      url: /upgrade-host-os-mediator-task.html
     - title: Post-installation configuration
       url: /post-install-config-concept.html
     - title: Uninstall ONTAP Mediator
@@ -56,6 +54,12 @@ sidebar:
             url: /start-stop-mediator-task.html
           - title: Verify ONTAP Mediator health
             url: /verify-mediator-health-task.html
+          - title: Upgrade ONTAP Mediator
+            entries:
+              - title: Upgrade ONTAP Mediator
+                url: /upgrade-ontap-mediator-task.html
+              - title: Upgrade the host OS and ONTAP Mediator
+                url: /upgrade-host-os-mediator-task.html
           - title: Manage certificates
             entries:
               - title: Regenerate a temporary self-signed certificate
