@@ -13,7 +13,7 @@ To upgrade ONTAP Mediator to a newer version without upgrading the host OS, down
 
 * If you need to upgrade the host OS to a new release and reinstall or upgrade ONTAP Mediator as part of that process, see link:upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator] instead.
 
-== Upgrade considerations
+== Upgrade requirements
 
 Review the following information before upgrading ONTAP Mediator.
 
@@ -29,7 +29,7 @@ Review the following information before upgrading ONTAP Mediator.
 
 .Before you begin
 
-* Ensure your host meets the prerequisites described in link:prepare-install.html[Prepare to install ONTAP Mediator], including the host, firewall, and OS requirements.
+* Verify that your host meets the prerequisites described in link:prepare-install.html[Prepare to install ONTAP Mediator], including the host, firewall, and OS requirements.
 * Download the installation package for the new version. See link:download-install-pkg-task.html[Download the ONTAP Mediator installation package].
 * NetApp recommends verifying the code signature of the new installation package. See link:verify-code-signature-task.html[Verify the code signature of the ONTAP Mediator installation package].
 
