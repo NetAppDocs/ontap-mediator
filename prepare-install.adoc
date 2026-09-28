@@ -14,11 +14,7 @@ To install ONTAP Mediator, you need to meet all prerequisites, download the inst
 * To upgrade an existing ONTAP Mediator installation, see link:upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
 * To upgrade the host OS to a new release and reinstall or upgrade ONTAP Mediator as part of that process, see link:upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator].
 
-* Beginning with ONTAP 9.8, you can use any version of ONTAP Mediator to monitor an SnapMirror active sync relationship.
-* When you configure the ONTAP Mediator with the iSCSI protocol, you can use any version of ONTAP Mediator to monitor a MetroCluster IP configuration. 
-* Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS for communication to monitor your MetroCluster IP configuration. 
-
-== Installation considerations
+== Installation requirements
 
 Review the following information before installing ONTAP Mediator. 
 
@@ -142,8 +138,8 @@ include::./_include/mediator-linux-support.adoc[]
 
 The following packages are required by ONTAP Mediator:
 
-[NOTE] 
-The packages are either pre-installed or automatically installed by the ONTAP Mediator installer.
+
+NOTE: The packages are either pre-installed or automatically installed by the ONTAP Mediator installer.
 
 [cols="25,25,25,25"]
 |===

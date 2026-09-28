@@ -13,11 +13,22 @@ Learn how to use ONTAP Mediator to monitor SnapMirror active sync relationships 
 
 ONTAP Mediator supports SnapMirror active sync and MetroCluster IP by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. 
 
+* Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can use the same ONTAP Mediator instance to monitor a four-node MetroCluster IP configuration and a SnapMirror active sync cluster peer relationship simultaneously. Your configuration must meet the following requirements:
+
+** ONTAP Mediator 1.12.1 or later is installed on a host OS with a 2-core CPU
+
+** The ONTAP Mediator instance is configured with the HTTPS protocol
++
+NOTE: You can only monitor one four-node MetroCluster IP configuration and one SnapMirror active sync peer relationship using the same ONTAP Mediator instance.
+
+* Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS for communication to monitor your MetroCluster IP configuration. 
+
+* Beginning with ONTAP 9.8, you can use any version of ONTAP Mediator to monitor a SnapMirror active sync relationship.
+* When you configure the ONTAP Mediator with the iSCSI protocol, you can use any version of ONTAP Mediator to monitor a MetroCluster IP configuration. 
+
 == Monitor SnapMirror active sync relationships
 
 SnapMirror active sync uses a mediator to act as a passive witness to SnapMirror active sync copies. In the event of a network partition or unavailability of one copy, SnapMirror active sync uses the mediator to determine which copy continues to serve I/O, while discontinuing I/O on the other copy. 
-
-* You can monitor up to ten SnapMirror active sync relationships simultaneously using a single ONTAP Mediator instance.
 
 NOTE: Beginning with ONTAP 9.17.1, SnapMirror active sync supports ONTAP Cloud Mediator for cloud deployments. You can use ONTAP Mediator or ONTAP Cloud Mediator, but you cannot use both at the same time. For more information, refer to the link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html[SnapMirror active sync documentation^].
 
@@ -27,19 +38,4 @@ link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install
 
 In MetroCluster IP configurations, ONTAP Mediator provides the capability for mediator-assisted automatic unplanned switchover (MAUSO). It stores state information about the MetroCluster nodes and assists the nodes in the event of a disaster or specific failure scenarios. MAUSO enables the availability and synchronization of the surviving site when nonvolatile cache mirroring and SyncMirror plex mirroring are in sync. 
 
-* Support for using a single ONTAP Mediator instance to monitor multiple MetroCluster IP configurations depends on your Mediator type, ONTAP version, and OS. Refer to link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html#mediator-multiple-mccip[Use ONTAP Mediator to monitor multiple MetroCluster IP configurations^].
-
 link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html[Configure ONTAP Mediator for a MetroCluster IP configuration^]
-
-== Monitor SnapMirror active sync and MetroCluster IP configurations
-
-Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can use the same ONTAP Mediator instance to monitor a four-node MetroCluster IP configuration and a SnapMirror active sync cluster peer relationship simultaneously. Your configuration must meet the following requirements:
-
-* ONTAP Mediator 1.12.1 or later is installed on a host OS with a 2-core CPU
-
-* The ONTAP Mediator instance is configured with the HTTPS protocol
-
-NOTE: You can only monitor one four-node MetroCluster IP configuration and one SnapMirror active sync peer relationship using the same ONTAP Mediator instance.
-
-* link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html[Configure ONTAP Mediator for a MetroCluster IP configuration^]
-* link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html[Configure the ONTAP Mediator for SnapMirror active sync^]
