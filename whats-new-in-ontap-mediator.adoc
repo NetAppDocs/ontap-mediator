@@ -11,13 +11,8 @@ summary: "New capabilities of the ONTAP Mediator are included with each release.
 [.lead]
 New enhancements to ONTAP Mediator are provided with each release.
 
-== Enhancements
+NOTE: For OS and SCST version information, see the link:support-matrix.html[Support matrix].
 
-For SCST version information, see the link:support-matrix.html[Support matrix] page.
-
-== Enhancements
-
-For SCST version information, see the <<SCST support matrix>>.
 
 [cols="25,75"]
 |===

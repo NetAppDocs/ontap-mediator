@@ -11,6 +11,10 @@ summary: "Operating system and SCST support information for ONTAP Mediator."
 [.lead]
 The ONTAP Mediator support matrix includes operating system and SCST version support information.
 
+== OS support matrix
+
+The following table lists the supported operating systems for each version of ONTAP Mediator.
+
 |===
 
 
