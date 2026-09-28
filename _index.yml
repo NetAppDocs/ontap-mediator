@@ -1,6 +1,6 @@
 indexpage:
   title: ONTAP Mediator documentation
-  lead: ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. 
+  lead: ONTAP Mediator supports SnapMirror active sync and MetroCluster IP by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. 
   summary: "ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness."
   keywords: mediator, ONTAP, high-availability, HA, metadata, quorum, controller, liveliness, smbc, metrocluster, snapmirrror active sync
   tiles:
