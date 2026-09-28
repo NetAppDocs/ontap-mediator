@@ -53,6 +53,10 @@ To re-enable the feature, change the value from 0 to 1 and restart the Mediator.
 
 NOTE: Toggling between disk spaces does not purge existing logs. All previous logs are backed up and then moved to the current disk space after toggling and restarting the Mediator.
 
+== Related information
+
+* link:configure-ontap-mediator-attributes-concept.html[Configure ONTAP Mediator attributes]
+
 // 2021 Apr 21, ONTAPEX-133437
 // 2021 May 05, review comment in IDR-67
 // 2022 Mar 07, ontap-metrocluster issue #146

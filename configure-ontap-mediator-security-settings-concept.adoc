@@ -56,6 +56,10 @@ password_special_chars: 1      # min. non-letter, non-digit
 password_nonletter_chars: 2    # min. non-letter characters (digits, specials, anything)
 ....
 
+== Related information
+
+* link:configure-ontap-mediator-attributes-concept.html[Configure ONTAP Mediator attributes]
+
 // 2021 Apr 21, ONTAPEX-133437
 // 2021 May 05, review comment in IDR-67
 // 2022 Mar 07, ontap-metrocluster issue #146
