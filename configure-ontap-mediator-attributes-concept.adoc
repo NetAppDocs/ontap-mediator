@@ -32,6 +32,11 @@ You modify ONTAP Mediator attributes by copying the required variables to the `o
 
 For certificate-related attributes, see link:install-third-party-ssl-certificates-concept.html[Install third-party SSL certificates].
 
+== Related information
+
+* link:configure-ontap-mediator-security-settings-concept.html[Configure ONTAP Mediator security settings]
+* link:configure-ontap-mediator-disk-log-space-concept.html[Configure ONTAP Mediator disk and log space]
+
 // 2021 Apr 21, ONTAPEX-133437
 // 2021 May 05, review comment in IDR-67
 // 2022 Mar 07, ontap-metrocluster issue #146
