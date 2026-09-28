@@ -62,6 +62,8 @@ sidebar:
             url: /configure-ontap-mediator-disk-log-space-concept.html
           - title: Manage certificates
             entries:
+              - title: Install third-party SSL certificates
+                url: /install-third-party-ssl-certificates-concept.html
               - title: Regenerate a temporary self-signed certificate
                 url: /regenerate-self-signed-certificate-task.html
               - title: Replace self-signed certificates with trusted certificates
