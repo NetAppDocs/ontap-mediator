@@ -42,8 +42,6 @@ sidebar:
       url: /upgrade-host-os-mediator-task.html
     - title: Post-installation configuration
       url: /post-install-config-concept.html
-    - title: Uninstall ONTAP Mediator
-      url: /uninstall-mediator-task.html
   - title: Use ONTAP Mediator
     entries:
     - title: Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP
@@ -56,6 +54,12 @@ sidebar:
             url: /start-stop-mediator-task.html
           - title: Verify ONTAP Mediator health
             url: /verify-mediator-health-task.html
+          - title: Configure ONTAP Mediator attributes
+            url: /configure-ontap-mediator-attributes-concept.html
+          - title: Configure ONTAP Mediator security settings
+            url: /configure-ontap-mediator-security-settings-concept.html
+          - title: Configure ONTAP Mediator disk and log space
+            url: /configure-ontap-mediator-disk-log-space-concept.html
           - title: Manage certificates
             entries:
               - title: Regenerate a temporary self-signed certificate
