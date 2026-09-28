@@ -6,7 +6,7 @@ summary: "To install or upgrade ONTAP Mediator, you must get the installation pa
 ---
 = Install the ONTAP Mediator installation package
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead] 
 To install or upgrade ONTAP Mediator, you must get the installation package and run the installer on the host.

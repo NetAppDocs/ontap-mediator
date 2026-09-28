@@ -6,7 +6,7 @@ summary: To install ONTAP Mediator, you must ensure all prerequisites are met, g
 ---
 = Install or upgrade ONTAP Mediator
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 To install or upgrade ONTAP Mediator, you need to meet all prerequisites, download the installation package, and run the installer on the host.

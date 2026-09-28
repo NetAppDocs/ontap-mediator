@@ -6,7 +6,7 @@ summary: "You should verify the ONTAP Mediator code signature before installing 
 ---
 = Verify the ONTAP Mediator code signature
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 NetApp recommends verifying the ONTAP Mediator code signature before installation. This step is optional.

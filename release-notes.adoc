@@ -6,7 +6,7 @@ summary: "Release notes for ONTAP Mediator."
 ---
 = Release Notes for ONTAP Mediator
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Release notes for ONTAP Mediator.

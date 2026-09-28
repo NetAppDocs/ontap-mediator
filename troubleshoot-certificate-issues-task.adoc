@@ -6,7 +6,7 @@ summary: "Check ONTAP Mediator certificate properties to diagnose certificate is
 ---
 = Troubleshoot certificate-related issues
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Use these checks to verify certificate properties when troubleshooting certificate issues.

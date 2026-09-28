@@ -6,7 +6,7 @@ summary: "Maintain the host OS for ONTAP Mediator regularly for optimal performa
 ---
 = Maintain the host OS for ONTAP Mediator
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Ensure the host OS for ONTAP Mediator is maintained regularly to achieve optimal performance.

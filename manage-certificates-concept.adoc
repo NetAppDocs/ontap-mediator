@@ -6,7 +6,7 @@ summary: "Manage ONTAP Mediator certificates, including temporary self-signed ce
 ---
 = Manage certificates
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Use the certificate tasks in this section to regenerate temporary self-signed certificates, replace them with trusted third-party certificates, and troubleshoot certificate issues.

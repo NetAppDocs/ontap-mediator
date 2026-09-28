@@ -6,7 +6,7 @@ summary: Manage ONTAP Mediator, including user credential management, service co
 ---
 = Manage ONTAP Mediator
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Manage ONTAP Mediator, including changing user credentials, stopping and re-enabling the service, verifying its health, and installing or uninstalling SCST for host maintenance. You can also manage certificates, such as regenerating self-signed certificates, replacing them with trusted third-party certificates, and troubleshooting certificate-related issues.

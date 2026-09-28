@@ -6,7 +6,7 @@ summary: "Replace ONTAP Mediator self-signed certificates with trusted certifica
 ---
 = Replace self-signed certificates with trusted third-party certificates
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 If your environment supports it, replace self-signed certificates with trusted certificates issued by a certificate authority.

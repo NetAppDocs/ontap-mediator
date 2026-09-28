@@ -6,7 +6,7 @@ summary: "NetApp recommends that you use System Manager to set up new clusters. 
 ---
 = ONTAP Mediator installation workflow summary
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Installing ONTAP Mediator includes preparing for the installation, providing access to repositories, downloading the installation package, verifying the code signature, installing the ONTAP Mediator package, and performing post-installation configuration tasks.
