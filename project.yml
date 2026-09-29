@@ -60,10 +60,6 @@ sidebar:
                 url: /upgrade-host-os-mediator-task.html
           - title: Configure ONTAP Mediator attributes
             url: /configure-ontap-mediator-attributes-concept.html
-          - title: Configure ONTAP Mediator security settings
-            url: /configure-ontap-mediator-security-settings-concept.html
-          - title: Configure ONTAP Mediator disk and log space
-            url: /configure-ontap-mediator-disk-log-space-concept.html
           - title: Manage certificates
             entries:
               - title: Install third-party SSL certificates

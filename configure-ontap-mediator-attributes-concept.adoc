@@ -9,7 +9,8 @@ summary: "Configure ONTAP Mediator attributes, including certificate-related set
 :imagesdir: ./media/
 
 [.lead]
-Configure ONTAP Mediator host-side attributes, including certificate-related settings and configuration overrides.
+You can configure ONTAP Mediator host-side attributes, including certificate-related settings and configuration overrides.
+
 
 ONTAP Mediator supports several configurable settings. The default values for these settings are provided in a `low_space_threshold_mib: 10` read-only file:
 
@@ -18,7 +19,7 @@ ONTAP Mediator supports several configurable settings. The default values for th
 All values that are placed in the `ontap_mediator.user_config.yaml` will override the default values and be maintained across all ONTAP Mediator upgrades.
 
 After you modify `ontap_mediator.user_config.yaml`, restart ONTAP Mediator:
-+
+
 [source,cli]
 ----
 systemctl restart ontap_mediator
@@ -30,12 +31,94 @@ NOTE: Other default values in the `ontap_mediator.config.yaml` should not be cha
 
 You modify ONTAP Mediator attributes by copying the required variables to the `ontap_mediator.user_config.yaml` file to override the default settings.
 
-For certificate-related attributes, see link:install-third-party-ssl-certificates-concept.html[Install third-party SSL certificates].
+== Configure password attack protection
 
-== Related information
+The following settings provide protection against brute-force password guessing attacks.
 
-* link:configure-ontap-mediator-security-settings-concept.html[Configure ONTAP Mediator security settings]
-* link:configure-ontap-mediator-disk-log-space-concept.html[Configure ONTAP Mediator disk and log space]
+To enable the feature, set a value for the `window_seconds` and the `retry_limit`.
+
+Examples:
+--
+** Provide a 5-minute window for guesses, and then reset the count to zero failures:
++
+`authentication_lock_window_seconds: 300`
+
+** Lock the account if five failures occur within the window timeframe:
++
+`authentication_retry_limit: 5`
+
+** Reduce the impact of brute-force password guessing attacks by setting a delay that occurs prior to rejecting each attempt, which slows the attacks.
++
+`authentication_failure_delay_seconds: 5`
++
+....
+authentication_failure_delay_seconds: 0   # seconds (float) to delay failed auth attempts prior to response, 0 = no delay
+authentication_lock_window_seconds: null  # seconds (int) since the oldest failure before resetting the retry counter, null = no window
+authentication_retry_limit: null          # number of retries to allow before locking API access, null = unlimited
+....
+--
+
+== Configure password complexity rules
+
+The following fields control the password complexity rules of the ONTAP Mediator API user account.
+
+....
+password_min_length: 8
+
+password_max_length: 64
+
+password_uppercase_chars: 0    # min. uppercase characters
+
+password_lowercase_chars: 1    # min. lowercase character
+
+password_special_chars: 1      # min. non-letter, non-digit
+
+password_nonletter_chars: 2    # min. non-letter characters (digits, specials, anything)
+....
+
+Configure ONTAP Mediator disk and log space settings, including the free-space threshold and reserved log space.
+
+== Configure the free-space threshold
+
+There are settings that control the required free space on the `/opt/netapp/lib/ontap_mediator` disk.
+
+If the space is lower than the set threshold, the service will issue a warning event.
+
+....
+low_space_threshold_mib: 10
+....
+
+== Configure reserved log space
+
+The RESERVE_LOG_SPACE is controlled by specific settings. By default, the ONTAP Mediator installation creates a separate disk space for the logs. The installer creates a new fixed-size file with a total of 700MB of disk space to be used explicitly for ONTAP Mediator logging.
+
+To disable this feature and use the default disk space, perform the following steps:
+
+--
+. Change the value of RESERVE_LOG_SPACE from 1 to 0 in the following file:
++
+`/opt/netapp/lib/ontap_mediator/tools/mediator_env`
++
+. Restart the Mediator:
++
+.. [source,cli]
+----
+cat /opt/netapp/lib/ontap_mediator/tools/mediator_env | grep "RESERVE_LOG_SPACE"
+----
++
+....
+RESERVE_LOG_SPACE=0
+....
++
+.. [source,cli]
+----
+systemctl restart ontap_mediator
+----
+--
+
+To re-enable the feature, change the value from 0 to 1 and restart the Mediator.
+
+NOTE: Toggling between disk spaces does not purge existing logs. All previous logs are backed up and then moved to the current disk space after toggling and restarting the Mediator.
 
 // 2021 Apr 21, ONTAPEX-133437
 // 2021 May 05, review comment in IDR-67

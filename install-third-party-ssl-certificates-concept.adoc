@@ -4,12 +4,13 @@ sidebar: sidebar
 keywords: mediator, certificate, ssl, third-party, trusted, attributes
 summary: "Configure ONTAP Mediator attributes for third-party SSL certificates."
 ---
-= Install third-party SSL certificates
+= Install third-party SSL certificates for ONTAP Mediator
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Configure ONTAP Mediator attributes for third-party SSL certificates.
+You can replace the default self-signed certificates with third-party SSL certificates by modifying the ONTAP Mediator configuration files.
+
 
 If you need to replace the default self-signed certificates with third-party SSL certificates, modify certain attributes in the following files:
 
