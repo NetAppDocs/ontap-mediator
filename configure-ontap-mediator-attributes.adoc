@@ -1,5 +1,5 @@
 ---
-permalink: configure-ontap-mediator-attributes-concept.html
+permalink: configure-ontap-mediator-attributes.html
 sidebar: sidebar
 keywords: mediator, configuration, attributes, ssl, certificates
 summary: "Configure ONTAP Mediator attributes, including certificate-related settings and host-side configuration overrides."
@@ -9,9 +9,11 @@ summary: "Configure ONTAP Mediator attributes, including certificate-related set
 :imagesdir: ./media/
 
 [.lead]
-You can configure ONTAP Mediator host-side attributes, including security-related settings and configuration overrides.
+You can configure ONTAP Mediator host-side attributes, including certificate-related settings and configuration overrides.
 
-ONTAP Mediator supports several configurable settings. The default values for these settings are provided in a `low_space_threshold_mib: 10` read-only file:
+== ONTAP Mediator configurable settings
+
+ONTAP Mediator supports several configurable settings. The default values for these settings are provided in a `low_space_threshold_mib: 10` read-only file. The file is located at:
 
 `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.user_config.yaml`
 
@@ -29,6 +31,86 @@ The ONTAP Mediator attributes described in this section can be modified if requi
 NOTE: Other default values in the `ontap_mediator.config.yaml` should not be changed because modified values are not maintained during ONTAP Mediator upgrades.
 
 You modify ONTAP Mediator attributes by copying the required variables to the `ontap_mediator.user_config.yaml` file to override the default settings.
+
+== Install third-party SSL certificates 
+
+You can replace the default self-signed certificates with third-party SSL certificates by modifying the ONTAP Mediator configuration files.
+
+To replace the default self-signed certificates with third-party SSL certificates, you modify certain attributes in the following files:
+
+* `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.config.yaml`
+* `/opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini`
+
+The variables in these files are used to control the certificate files used by ONTAP Mediator.
+
+[role="tabbed-block"]
+====
+.ONTAP Mediator 1.9 and later
+--
+The default variables listed in the following table are included in the `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.config.yaml` file.
+
+[cols=2*,options="header"]
+|===
+| Variable
+| Path
+| `cert_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator_server.crt`
+| `key_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator_server.key`
+| `ca_cert_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/intermediate.crt`
+| `ca_key_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/intermediate.key`
+| `ca_serial_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/intermediate.srl`
+| `cert_valid_days` | `1095`
+| `x509_passin_pwd` | `pass:ontap`
+|===
+
+* `cert_valid_days` is used to set the expiration of client certificates. The maximum value is three years (1095 days).
+* `x509_passin_pwd` is the passphrase for the signed client certificate.
+
+The default variables listed in the following table are included in the `/opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini` file.
+
+[cols=2*,options="header"]
+|===
+| Variable
+| Path
+| `mediator_cert` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator_server.crt`
+| `mediator_key` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator_server.key`
+| `ca_cert_path` |  `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/intermediate.crt`
+|===
+
+--
+.ONTAP Mediator 1.8 and earlier
+--
+The default variables listed in the following table are included in the `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.config.yaml` file.
+
+[cols=2*,options="header"]
+|===
+| Variable
+| Path
+| `cert_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator_server.crt`
+| `key_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator_server.key`
+| `ca_cert_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ca.crt`
+| `ca_key_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ca.key`
+| `ca_serial_path` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ca.srl`
+| `cert_valid_days` | `1095`
+| `x509_passin_pwd` | `pass:ontap`
+|===
+
+* `cert_valid_days` is used to set the expiration of client certificates. The maximum value is three years (1095 days).
+* `x509_passin_pwd` is the passphrase for the signed client certificate.
+
+The default variables listed in the following table are included in the `/opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini` file.
+
+[cols=2*,options="header"]
+|===
+| Variable
+| Path
+| `mediator_cert` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator_server.crt`
+| `mediator_key` | `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator_server.key`
+| `ca_cert_path` |  `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ca.crt`
+|===
+--
+====
+
+If you modify these attributes, restart ONTAP Mediator to apply the changes. For detailed instructions on how to replace default certificates with third-party certificates, refer to link:replace-self-signed-certificates-task.html[Replace self-signed certificates with trusted third-party certificates].
 
 == Configure password attack protection
 

@@ -71,8 +71,11 @@ netstat -anlt | grep -E '3260|31784'
          tcp6  0   0 :::3260         :::*           LISTEN
 ....
 
-.What’s next?
-link:post-install-config-concept.html[Perform post-installation configuration tasks]
+.What's next?
+After ONTAP Mediator is installed and verified, you can proceed with the following post-installation configuration tasks:
+
+* link:use-mediator-snapmirror-metrocluster-task.html[Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP]
+* link:configure-ontap-mediator-attributes.html[Configure ONTAP Mediator attributes] (Optional)
 
 // 2021-04-21 ONTAPEX-133437
 // 2021-05-05 review comment in IDR-67
