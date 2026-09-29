@@ -583,8 +583,6 @@ NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only,
 ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/
 ----
 +
-Example output:
-+
 ....
 README.module-signing  scst_module_key.der  scst_module_key.priv
 ....

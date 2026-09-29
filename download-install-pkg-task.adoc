@@ -24,8 +24,6 @@ https://mysupport.netapp.com/site/products/all/details/ontap-mediator/downloads-
 ls ontap-mediator-1.12.1.0.tgz
 ----
 +
-Example output:
-+
 ....
 ontap-mediator-1.12.1.0.tgz
 ....
@@ -42,8 +40,6 @@ If your system does not have internet access, make sure the installer can access
 ----
 tar xvfz ontap-mediator-1.12.1.0.tgz
 ----
-+
-Example output:
 +
 ....
 ontap-mediator-1.12.1.0/

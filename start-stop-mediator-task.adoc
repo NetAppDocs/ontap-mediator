@@ -18,15 +18,24 @@ To stop ONTAP Mediator, perform the following steps:
 .Steps
 . Stop ONTAP Mediator:
 +
-`systemctl stop ontap_mediator`
+[source,cli]
+----
+systemctl stop ontap_mediator
+----
 
 . Stop SCST:
 +
-`systemctl stop mediator-scst`
+[source,cli]
+----
+systemctl stop mediator-scst
+----
 
 . Disable ONTAP Mediator and SCST:
 +
-`systemctl disable ontap_mediator mediator-scst`
+[source,cli]
+----
+systemctl disable ontap_mediator mediator-scst
+----
 
 == Start ONTAP Mediator
 
@@ -35,12 +44,21 @@ To re-enable ONTAP Mediator, perform the following steps:
 .Steps
 . Enable ONTAP Mediator and SCST:
 +
-`systemctl enable ontap_mediator mediator-scst`
+[source,cli]
+----
+systemctl enable ontap_mediator mediator-scst
+----
 
 . Start SCST:
 +
-`systemctl start mediator-scst`
+[source,cli]
+----
+systemctl start mediator-scst
+----
 
 . Start ONTAP Mediator:
 +
-`systemctl start ontap_mediator`
+[source,cli]
+----
+systemctl start ontap_mediator
+----

@@ -17,7 +17,12 @@ Verify that ONTAP Mediator is running normally.
 
 . View the status of ONTAP Mediator:
 +
-.. `systemctl status ontap_mediator`
+.. Run the following command:
++
+[source,cli]
+----
+systemctl status ontap_mediator
+----
 +
 ----
 [root@mediator_host ~]# systemctl status ontap_mediator
@@ -37,8 +42,13 @@ CGroup: /system.slice/ontap_mediator.service
 
 [root@mediator_host ~]#
 ----
+
+.. View the status of the SCST service:
 +
-.. `systemctl status mediator-scst`
+[source,cli]
+----
+systemctl status mediator-scst
+----
 +
 ----
 [root@mediator_host ~]# systemctl status mediator-scst
@@ -58,7 +68,10 @@ CGroup: /system.slice/ontap_mediator.service
 
 . Confirm the ports that are used by ONTAP Mediator:
 +
-`netstat`
+[source,cli]
+----
+netstat -anlt | grep -E '3260|31784'
+----
 +
 ----
 [root@scspr1905507001 ~]# netstat -anlt | grep -E '3260|31784'
