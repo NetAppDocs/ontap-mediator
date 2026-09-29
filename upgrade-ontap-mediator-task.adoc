@@ -33,6 +33,8 @@ Review the following information before upgrading ONTAP Mediator.
 * Download the installation package for the new version. See link:download-install-pkg-task.html[Download the ONTAP Mediator installation package].
 * NetApp recommends verifying the code signature of the new installation package. See link:verify-code-signature-task.html[Verify the code signature of the ONTAP Mediator installation package].
 
+== Upgrade ONTAP Mediator
+
 .About this task
 
 include::./_include/https-only-mediator.adoc[]
@@ -329,7 +331,4 @@ fapolicyd not installed or no rules.d directory found, skipping fapolicyd config
 ----
 ====
 
-.What’s next?
-link:verify-install-task.html[Verify the ONTAP Mediator installation status]
 
-// Split out of install-mediator-pkg-task.adoc to separate upgrade-only steps from fresh install steps.
