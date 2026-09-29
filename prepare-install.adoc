@@ -11,12 +11,12 @@ summary: To install ONTAP Mediator, you must ensure all prerequisites are met, g
 [.lead]
 To install ONTAP Mediator, you need to meet all prerequisites, download the installation package, and run the installer on the host.
 
-* To upgrade an existing ONTAP Mediator installation, see link:upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
-* To upgrade the host OS to a new release and reinstall or upgrade ONTAP Mediator as part of that process, see link:upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator].
+* To upgrade ONTAP Mediator to a new version, see link:upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
+* If you need to upgrade the host OS and reinstall or upgrade ONTAP Mediator as part of that process, see link:upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator].
 
 == Installation requirements
 
-Review the following information before installing ONTAP Mediator. 
+Review the following requirements before installing ONTAP Mediator. 
 
 NOTE: ONTAP Mediator 1.8 and earlier is not compatible with Red Hat Enterprise Linux (RHEL) FIPS mode and prevents it from installing successfully. You can check if FIPS mode is enabled using the `fips-mode-setup --check` command. You can disable FIPS mode using the `fips-modesetup --disable` command. Reboot after disabling FIPS mode to successfully install ONTAP Mediator 1.8 or earlier.
 
@@ -32,6 +32,8 @@ NOTE: ONTAP Mediator 1.8 and earlier is not compatible with Red Hat Enterprise L
 
 [[https-iscsi-installation]]
 === HTTPS and iSCSI installation options for ONTAP Mediator
+
+Before installing ONTAP Mediator, review the following information:
 
 * In ONTAP Mediator, the SCST package is used to provide iSCSI for communication in MetroCluster IP configurations. The SCST package is a kernel module that is compiled during installation. Beginning with ONTAP 9.19.1 and Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS instead of iSCSI to monitor a MetroCluster IP configuration.
 
