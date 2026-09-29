@@ -6,7 +6,7 @@ summary: "Learn about ONTAP Mediator."
 ---
 = Learn about ONTAP Mediator
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. 

@@ -6,7 +6,7 @@ summary: "Remove ONTAP Mediator from the host."
 ---
 = Uninstall ONTAP Mediator
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 If necessary, uninstall ONTAP Mediator after disconnecting it from ONTAP.

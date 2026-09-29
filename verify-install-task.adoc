@@ -6,7 +6,7 @@ summary: "After the ONTAP Mediator has been installed, you should verify that th
 ---
 = Verify the ONTAP Mediator installation status
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 After you install ONTAP Mediator, verify that it is running successfully.

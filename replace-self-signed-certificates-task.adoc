@@ -6,7 +6,7 @@ summary: "Replace ONTAP Mediator self-signed certificates with trusted certifica
 ---
 = Replace self-signed certificates with trusted third-party certificates
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 If your environment supports it, replace self-signed certificates with trusted certificates issued by a certificate authority.
@@ -73,7 +73,7 @@ Enter pass phrase for intermediate.key:
 +
 The PKI authority verifies the request and signs the `.csr`, generating the certificate `intermediate.crt`. Additionally, you need to obtain the `root_ca.crt` certificate that signed the `intermediate.crt` certificate from the PKI authority.
 +
-NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `intermediate.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:../snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync].
+NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `intermediate.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync^].
 
 --
 .ONTAP Mediator 1.8 and earlier
@@ -106,7 +106,7 @@ Enter pass phrase for ca.key:
 +
 The PKI authority verifies the request and signs the `.csr`, generating the certificate `ca.crt`. Additionally, you need to obtain the `root_ca.crt` certificate that signed the `ca.crt` certificate from the PKI authority.
 +
-NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `ca.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:../snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync].
+NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `ca.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync^].
 --
 ====
 
@@ -366,7 +366,7 @@ Update the values of `ssl_keyfile`, `ssl_certfile`, and `ssl_ca_certs`:
 +
 * The `ssl_ca_certs` value is the path of the `root_ca.crt` file.
 +
-NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `intermediate.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:../snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync].
+NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `intermediate.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync^].
 
 .. Verify that the following attributes of the newly generated certificates are set correctly:
 +
@@ -431,7 +431,7 @@ Update the values of `mediator_cert`, `mediator_key`, and `ca_certificate`:
 * The `mediator_key` value is the key path in the `ontap_mediator_server.crt` file, which is `ontap_mediator_server.key`.
 * The `ca_certificate` value is the path of the `root_ca.crt` file.
 +
-NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `intermediate.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:../snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync].
+NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `intermediate.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync^].
 
 .. Verify that the following attributes of the newly generated certificates are set correctly:
 +
@@ -497,7 +497,7 @@ Update the values of `mediator_cert`, `mediator_key`, and `ca_certificate`:
 * The `mediator_key` value is the key path in the `ontap_mediator_server.crt` file, which is `ontap_mediator_server.key`.
 * The `ca_certificate` value is the path of the `root_ca.crt` file.
 +
-NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `ca.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:../snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync].
+NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `ca.crt` and `root_ca.crt` certificates to an ONTAP cluster. See link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html[Configure ONTAP Mediator and clusters for SnapMirror active sync^].
 
 .. Verify that the following attributes of the newly generated certificates are set correctly:
 +

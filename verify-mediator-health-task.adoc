@@ -6,7 +6,7 @@ summary: "Verify that ONTAP Mediator is healthy and listening on the expected po
 ---
 = Verify ONTAP Mediator health
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Verify that ONTAP Mediator is running normally.

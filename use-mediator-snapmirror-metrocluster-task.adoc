@@ -6,7 +6,7 @@ summary: "Learn about ONTAP Mediator."
 ---
 = Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Learn how to use ONTAP Mediator to monitor SnapMirror active sync relationships and MetroCluster IP configurations.

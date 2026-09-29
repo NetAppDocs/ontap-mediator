@@ -6,7 +6,7 @@ summary: "Download the Mediator installation package as part of the installation
 ---
 = Download the ONTAP Mediator installation package
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Download the ONTAP Mediator installation package and install it.

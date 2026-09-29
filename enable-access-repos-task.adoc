@@ -6,7 +6,7 @@ summary: "Enable access to repositories so ONTAP Mediator can access the require
 ---
 = Provide repository access for ONTAP Mediator installation
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 You should enable access to repositories so that ONTAP Mediator can access the required packages during the installation process.

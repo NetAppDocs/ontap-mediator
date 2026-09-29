@@ -6,7 +6,7 @@ summary: "To install ONTAP Mediator, you must get the installation package and r
 ---
 = Install the ONTAP Mediator installation package
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead] 
 To install ONTAP Mediator, you must get the installation package and run the installer on the host.

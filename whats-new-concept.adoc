@@ -6,7 +6,7 @@ summary: "New capabilities of the ONTAP Mediator are provided with each release.
 ---
 = New features in ONTAP Mediator 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 New enhancements to ONTAP Mediator are provided with each release. Here's what's new.

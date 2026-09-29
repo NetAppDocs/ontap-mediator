@@ -6,7 +6,7 @@ summary: "Operating system and SCST support information for ONTAP Mediator."
 ---
 = Support matrix
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 The ONTAP Mediator support matrix includes operating system and SCST version support information.

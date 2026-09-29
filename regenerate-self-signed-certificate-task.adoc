@@ -6,7 +6,7 @@ summary: "Regenerate a temporary self-signed certificate when the host name or I
 ---
 = Regenerate a temporary self-signed certificate
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Regenerate a temporary self-signed certificate for the current host when a hostname or IP address change invalidates the existing certificate.
