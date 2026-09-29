@@ -195,7 +195,7 @@ The following requirements apply when the SCST package is installed with ONTAP M
 NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only, the SCST package is not installed so the kernel compatibility requirements do not apply. 
 
 * You can update all library packages except the kernel, but you might need to reboot to apply changes in ONTAP Mediator. Schedule downtime if you need to reboot.
-* You should keep the OS kernel up to date. Upgrade the kernel core to a supported version listed in the link:whats-new-concept.html#scst-support-matrix[ONTAP Mediator version matrix]. You must reboot the system, so plan a maintenance window for the outage.
+* You should keep the OS kernel up to date. Upgrade the kernel core to a supported version listed in the link:support-matrix.html#scst-support-matrix[ONTAP Mediator version matrix]. You must reboot the system, so plan a maintenance window for the outage.
 ** Uninstall the SCST kernel module before you reboot, and then reinstall it afterwards.
 ** Prepare a supported version of SCST to reinstall before you start the kernel OS upgrade.
 
