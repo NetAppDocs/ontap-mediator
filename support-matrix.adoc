@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mediator, support matrix, OS support, SCST support, release notes
 summary: "Operating system and SCST support information for ONTAP Mediator."
 ---
-= Support matrix
+= ONTAP Mediator support matrix
 :icons: font
 :imagesdir: ./media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mediator, certificate, self-signed, trusted third-party, CA
 summary: "Replace ONTAP Mediator self-signed certificates with trusted certificates."
 ---
-= Replace self-signed certificates with trusted third-party certificates
+= Replace ONTAP Mediator self-signed certificates with trusted third-party certificates
 :icons: font
 :imagesdir: ./media/
 

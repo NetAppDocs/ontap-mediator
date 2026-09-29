@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mediator, certificate, troubleshoot, verify, expiration, x509, OpenSSL
 summary: "Check ONTAP Mediator certificate properties to diagnose certificate issues."
 ---
-= Troubleshoot certificate-related issues
+= Troubleshoot ONTAP Mediator certificate-related issues
 :icons: font
 :imagesdir: ./media/
 

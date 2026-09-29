@@ -9,8 +9,7 @@ summary: "Configure ONTAP Mediator attributes, including certificate-related set
 :imagesdir: ./media/
 
 [.lead]
-You can configure ONTAP Mediator host-side attributes, including certificate-related settings and configuration overrides.
-
+You can configure ONTAP Mediator host-side attributes, including security-related settings and configuration overrides.
 
 ONTAP Mediator supports several configurable settings. The default values for these settings are provided in a `low_space_threshold_mib: 10` read-only file:
 
@@ -120,6 +119,8 @@ To re-enable the feature, change the value from 0 to 1 and restart the Mediator.
 
 NOTE: Toggling between disk spaces does not purge existing logs. All previous logs are backed up and then moved to the current disk space after toggling and restarting the Mediator.
 
+.Related information
+link:install-third-party-ssl-certificates-concept.html[Install third-party SSL certificates for ONTAP Mediator]
 // 2021 Apr 21, ONTAPEX-133437
 // 2021 May 05, review comment in IDR-67
 // 2022 Mar 07, ontap-metrocluster issue #146

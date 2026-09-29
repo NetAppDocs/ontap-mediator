@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mediator, certificate, self-signed, regenerate, hostname, IP address
 summary: "Regenerate a temporary self-signed certificate when the host name or IP address changes."
 ---
-= Regenerate a temporary self-signed certificate
+= Regenerate a temporary self-signed certificate for the ONTAP Mediator host
 :icons: font
 :imagesdir: ./media/
 

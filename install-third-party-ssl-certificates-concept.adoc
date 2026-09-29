@@ -11,8 +11,7 @@ summary: "Configure ONTAP Mediator attributes for third-party SSL certificates."
 [.lead]
 You can replace the default self-signed certificates with third-party SSL certificates by modifying the ONTAP Mediator configuration files.
 
-
-If you need to replace the default self-signed certificates with third-party SSL certificates, modify certain attributes in the following files:
+To replace the default self-signed certificates with third-party SSL certificates, you modify certain attributes in the following files:
 
 * `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.config.yaml`
 * `/opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini`
