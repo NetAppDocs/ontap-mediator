@@ -566,7 +566,7 @@ You can leave the private key in its default location or move it to a secure loc
 `[root@hostname ~]# ls /opt/netapp/lib/ontap_mediator/ontap_mediator/SCST_mod_keys/ README.module-signing scst_module_key.der scst_module_key.priv`
 ====
 
-. Reboot the host and use your device's UEFI Boot Manager to approve the new MOK. You'll need the passphrase provided for the `mokutil` utility in link:index.html#install-ontap-mediator-when-uefi-secure-boot-is-enabled[Install ONTAP Mediator when UEFI Secure Boot is enabled].
+. Reboot the host and use your device's UEFI Boot Manager to approve the new MOK. You'll need the passphrase provided for the `mokutil` utility in link:prepare-install.html#install-ontap-mediator-when-uefi-secure-boot-is-enabled[Install ONTAP Mediator when UEFI Secure Boot is enabled].
 
 == Signing SCST kernel modules
 

@@ -11,7 +11,7 @@ summary: "NetApp recommends that you use System Manager to set up new clusters. 
 [.lead]
 Installing ONTAP Mediator includes preparing for the installation, providing access to repositories, downloading the installation package, verifying the code signature, and installing the ONTAP Mediator package.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:index.html[Prepare to install or upgrade ONTAP Mediator]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:prepare-install.html[Prepare to install or upgrade ONTAP Mediator]
 [role="quick-margin-para"]
 To install or upgrade ONTAP Mediator, you must ensure that all prerequisites are met.
 
