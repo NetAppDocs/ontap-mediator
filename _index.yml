@@ -15,11 +15,11 @@ indexpage:
   - title: Install and setup
     links:
       - title: Install ONTAP Mediator 
-        url: /workflow-summary.html.html
+        url: /workflow-summary.html
       - title: Upgrade ONTAP Mediator
         url: /upgrade-ontap-mediator-task.html
       - title: Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP
-        url: /use-mediator-metrocluster-ip-task.html
+        url: /use-mediator-snapmirror-metrocluster-task.html
   - title: More resources
     links:
       - title: ONTAP 9 documentation
