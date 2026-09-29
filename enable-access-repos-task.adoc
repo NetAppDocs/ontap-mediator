@@ -157,7 +157,6 @@ Repository 'ol-9-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 yum repolist
 ----
-+
 The newly subscribed repositories should appear in the list.
 ====
 [[rhel10x]]
@@ -196,7 +195,6 @@ Repository 'rhel-10-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 yum repolist
 ----
-+
 The newly subscribed repositories should appear in the list.
 ====
 
@@ -236,7 +234,6 @@ Repository 'rhel-9-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 yum repolist
 ----
-+
 The newly subscribed repositories should appear in the list.
 ====
 
@@ -276,7 +273,6 @@ Repository 'rhel-8-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 yum repolist
 ----
-+
 The newly subscribed repositories should appear in the list.
 ====
 
