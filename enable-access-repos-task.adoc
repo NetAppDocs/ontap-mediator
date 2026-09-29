@@ -118,7 +118,7 @@ Repository 'ol-10-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 yum repolist
 ----
-+
+The newly subscribed repositories should appear in the list.
 ====
 
 [[OL9x]]
@@ -304,9 +304,7 @@ Repository 'rhel-7-server-optional-rpms' is enabled for this system.
 ----
 yum repolist
 ----
-+
 The following example shows the execution of this command. The "rhel-7-server-optional-rpms" repository should appear in the list.
-+
 ----
 [root@localhost ~]# yum repolist
 Loaded plugins: product-id, search-disabled-repos, subscription-manager
@@ -354,9 +352,7 @@ enabled=1
 ----
 yum repolist
 ----
-+
 The following example shows the execution of this command. The CentOS-7.6.1810 - Base repository should appear in the list.
-+
 ----
 Loaded plugins: fastestmirror
 Loading mirror speeds from cached hostfile
