@@ -94,7 +94,7 @@ Use this procedure if your operating system is *Oracle Linux 10.x* to enable acc
 . Subscribe to the required repository:
 +
 [source,cli]  
-----   
+----
 subscription-manager repos --enable ol-10-for-x86_64-baseos-rpms
 ----
 +
@@ -119,7 +119,6 @@ Repository 'ol-10-for-x86_64-appstream-rpms' is enabled for this system.
 yum repolist
 ----
 +
-The newly subscribed repositories should appear in the list.
 ====
 
 [[OL9x]]
@@ -134,7 +133,7 @@ Use this procedure if your operating system is *Oracle Linux 9.x* to enable acce
 . Subscribe to the required repository:
 +
 [source,cli]  
-----  
+----
 subscription-manager repos --enable ol-9-for-x86_64-baseos-rpms
 ----
 +
@@ -155,7 +154,7 @@ Repository 'ol-9-for-x86_64-appstream-rpms' is enabled for this system.
 . Run the following command to list the enabled repositories:
 
 [source,cli]  
-----   
+----
 yum repolist
 ----
 +
@@ -173,7 +172,7 @@ Use this procedure if your operating system is *RHEL 10.x* to enable access to r
 . Subscribe to the required repository:
 +
 [source,cli]  
-----   
+----
 subscription-manager repos --enable rhel-10-for-x86_64-baseos-rpms
 ----
 +
