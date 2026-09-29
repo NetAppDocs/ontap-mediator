@@ -43,6 +43,6 @@ Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can also use the same H
 NOTE: You can only monitor one four-node MetroCluster IP configuration and one SnapMirror active sync peer relationship using the same ONTAP Mediator instance.
 
 .Related information
-* link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html[Learn about ONTAP Mediator^]
+
 * link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/architecture-concept.html[ONTAP SnapMirror active sync architecture^]
 * link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept-ontap-mediator-supports-automatic-unplanned-switchover.html[Learn about ONTAP Mediator support for automatic unplanned switchover in a MetroCluster IP configuration^]
