@@ -27,14 +27,6 @@ link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install
 
 In a MetroCluster IP configuration, ONTAP Mediator stores state information about the MetroCluster nodes in mailbox LUNs and assists the nodes with a Mediator-assisted automatic unplanned switchover (MAUSO) in the event of a disaster or specific failure scenarios.
 
-By default, a MAUSO is initiated when all of the following are true:
-
-* SyncMirror mirroring and DR mirroring of each node's nonvolatile cache is operating, and the caches and mirrors are synchronized at the time of the failure.
-* None of the nodes at the surviving site are in takeover state.
-* A site disaster occurs (all nodes at the same site fail).
-
-A MAUSO isn't initiated if you deliberately halt or reboot the nodes.
-
 Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS for communication to monitor your MetroCluster IP configuration. When you configure ONTAP Mediator with the iSCSI protocol, you can use any version of ONTAP Mediator to monitor a MetroCluster IP configuration.
 
 NOTE: For limits on the number of MetroCluster IP configurations that a single ONTAP Mediator instance can monitor, see link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html#mediator-multiple-mccip[Use ONTAP Mediator to monitor multiple MetroCluster IP configurations^] 
