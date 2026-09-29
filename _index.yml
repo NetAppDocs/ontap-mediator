@@ -10,5 +10,25 @@ indexpage:
         url: /learn-about.html
       - title: Quick start
         url: /quick-start.html
+      - title: Release notes
+        url: /whats-new-in-ontap-mediator.html
+  - title: Install and setup
+    links:
+      - title: Install ONTAP Mediator 
+        url: /workflow-summary.html.html
+      - title: Upgrade ONTAP Mediator
+        url: /upgrade-ontap-mediator-task.html
+      - title: Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP
+        url: /use-mediator-metrocluster-ip-task.html
+  - title: More resources
+    links:
+      - title: ONTAP 9 documentation
+        url: https://docs.netapp.com/us-en/ontap/
+      - title: MetroCluster documentation
+        url: https://docs.netapp.com/us-en/ontap-metrocluster/
+      - title: ONTAP REST API reference
+        url: https://docs.netapp.com/us-en/ontap-restapi/
+      - title: ONTAP CLI reference
+        url: https://docs.netapp.com/us-en/ontap-cli/
 
   # Next tile on this page (title/links)
