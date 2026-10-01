@@ -19,7 +19,7 @@ SnapMirror active sync uses ONTAP Mediator as a passive witness to the primary a
 
 Beginning with ONTAP 9.8, you can use any version of ONTAP Mediator to monitor a SnapMirror active sync relationship.
 
-NOTE: A single ONTAP Mediator instance can monitor up to ten SnapMirror active sync relationships simultaneously.
+NOTE: For limits on the number of SnapMirror active sync relationships that a single ONTAP Mediator instance can monitor, see link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/limits-reference.html[Object limits for ONTAP SnapMirror active sync^].
 
 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html[Configure the ONTAP Mediator for SnapMirror active sync^]
 
@@ -32,15 +32,6 @@ Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP 
 NOTE: For limits on the number of MetroCluster IP configurations that a single ONTAP Mediator instance can monitor, see link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html#mediator-multiple-mccip[Use ONTAP Mediator to monitor multiple MetroCluster IP configurations^] 
 
 link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html[Configure ONTAP Mediator for a MetroCluster IP configuration^]
-
-== Monitor a SnapMirror active sync relationship and MetroCluster IP configuration simultaneously
-
-Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can also use the same HTTPS ONTAP Mediator instance to monitor a four-node MetroCluster IP configuration and a SnapMirror active sync cluster peer relationship at the same time. Your configuration must meet the following requirements:
-
-* ONTAP Mediator 1.12.1 or later is installed on a host with a 2-core CPU.
-* The ONTAP Mediator instance is configured with the HTTPS protocol.
-
-NOTE: You can only monitor one four-node MetroCluster IP configuration and one SnapMirror active sync peer relationship using the same ONTAP Mediator instance.
 
 .Related information
 

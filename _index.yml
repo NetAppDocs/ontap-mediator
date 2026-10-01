@@ -12,7 +12,7 @@ indexpage:
         url: /quick-start.html
       - title: Release notes
         url: /whats-new-in-ontap-mediator.html
-  - title: Install or upgrade
+  - title: Install, upgrade, and configure
     links:
       - title: Install ONTAP Mediator 
         url: /workflow-summary.html
