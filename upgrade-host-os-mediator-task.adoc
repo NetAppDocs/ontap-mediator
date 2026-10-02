@@ -13,11 +13,11 @@ To upgrade the host OS for ONTAP Mediator with SCST installed to a later version
 
 .About this task
 
-* This task applies to ONTAP Mediator versions with SCST installed. If you installed ONTAP Mediator 1.12 or later with support for HTTPS only, the SCST package is not installed and you can upgrade the host OS without affecting ONTAP Mediator. Refer to the host OS vendor's documentation for OS upgrade instructions. After you upgrade the host OS, if you need to upgrade your version of ONTAP Mediator, refer to link:upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
+* This task applies to ONTAP Mediator versions with SCST installed. If you installed ONTAP Mediator 1.12 or later with support for HTTPS only, the SCST package is not installed and you can upgrade the host OS without affecting ONTAP Mediator. Refer to the host OS vendor's documentation for OS upgrade instructions. 
 
 * If you only need to update the host OS kernel to a supported version without upgrading to a new OS release, see link:host-maintenance-task.html[Maintain the host OS for ONTAP Mediator] instead.
 
-* Before upgrading the host OS for ONTAP Mediator with the leapp-upgrade tool, uninstall ONTAP Mediator. The tool checks for new RPM versions in registered repositories.
+* Before upgrading the host OS for ONTAP Mediator with the leapp-upgrade tool, link:uninstall-mediator-task.html[uninstall ONTAP Mediator]. The tool checks for new RPM versions in registered repositories.
 
 * The ONTAP Mediator installer installs an .rpm file, which the leapp-upgrade tool includes in the search. Because the installer unpacks the file instead of downloading it from a registered repository, the tool cannot find an upgrade. You must use the leapp-upgrade tool to uninstall the package.
 
