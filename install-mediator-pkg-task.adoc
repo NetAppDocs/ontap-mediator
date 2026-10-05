@@ -568,7 +568,7 @@ You can leave the private key in its default location or move it to a secure loc
 
 . Reboot the host and use your device's UEFI Boot Manager to approve the new MOK. You'll need the passphrase provided for the `mokutil` utility in link:prepare-install.html#install-ontap-mediator-when-uefi-secure-boot-is-enabled[Install ONTAP Mediator when UEFI Secure Boot is enabled].
 
-== Signing SCST kernel modules
+== Sign SCST kernel modules
 
 After ONTAP Mediator is installed, if the systemctl status `mediator-scst` shows as failed (inactive), follow these steps to sign the SCST kernel module.
 
