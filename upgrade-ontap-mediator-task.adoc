@@ -61,7 +61,7 @@ To skip the signature check during the upgrade, use the
 ====
 +
 The installer detects the existing installation and prompts you to upgrade, then installs the required packages and migrates your configuration.
-
++
 .Example ONTAP Mediator upgrade with HTTPS and iSCSI support (console output)
 [%collapsible]
 
@@ -187,7 +187,7 @@ Database upgrade operation complete.
 
 ----
 ====
-
++
 .Example of ONTAP Mediator upgrade with support for HTTPS only (console output)
 [%collapsible]
 

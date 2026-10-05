@@ -50,8 +50,7 @@ To skip signature check during installation, use the
 ====
 +
 The installer creates the required accounts and installs the required packages. If ONTAP Mediator is already installed, the installer prompts you to upgrade instead; for upgrade-specific steps and examples, see link:upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
-
-
++
 .Example ONTAP Mediator installation with HTTPS and iSCSI support (console output)
 [%collapsible]
 ====
@@ -431,7 +430,7 @@ OS package installations finished
 
 ----
 ====
-
++
 .Example ONTAP Mediator installation with support for HTTPS only (console output)
 [%collapsible]
 

@@ -78,12 +78,10 @@ a|
 |===
 
 . Use one of the following procedures to enable access to the repositories listed above so ONTAP Mediator can access the required packages during the installation process.
-
++
 [NOTE]
 If ONTAP Mediator has dependencies on Python modules present in the "extras" and "optional" repositories, it might need to access the `rhel-X-for-x86_64-extras-rpms` and `rhel-X-for-x86_64-optional-rpms` files.
-
-[[OL10x]]
-
++
 .Procedure for Oracle Linux 10.x operating system
 [%collapsible]
 ====
@@ -113,16 +111,14 @@ Repository 'ol-10-for-x86_64-appstream-rpms' is enabled for this system.
 ----
 
 . Run the following command to list the enabled repositories:
-
++
 [source,cli]
 ----
 yum repolist
 ----
 The newly subscribed repositories should appear in the list.
 ====
-
-[[OL9x]]
-
++
 .Procedure for Oracle Linux 9.x operating system
 [%collapsible]
 ====
@@ -159,8 +155,7 @@ yum repolist
 ----
 The newly subscribed repositories should appear in the list.
 ====
-[[rhel10x]]
-
++
 .Procedure for RHEL 10.x operating system
 [%collapsible]
 ====
@@ -197,9 +192,7 @@ yum repolist
 ----
 The newly subscribed repositories should appear in the list.
 ====
-
-[[rhel9x]]
-
++
 .Procedure for RHEL 9.x operating system
 [%collapsible]
 ====
@@ -236,9 +229,7 @@ yum repolist
 ----
 The newly subscribed repositories should appear in the list.
 ====
-
-[[rhel8x]]
-
++
 .Procedure for RHEL 8.x operating system
 [%collapsible]
 ====
@@ -275,9 +266,7 @@ yum repolist
 ----
 The newly subscribed repositories should appear in the list.
 ====
-
-[[rhel7x]]
-
++
 .Procedure for RHEL 7.x operating system
 [%collapsible]
 ====
@@ -320,9 +309,7 @@ repolist: 46,205
 [root@localhost ~]#
 ----
 ====
-
-[[centos7x]]
-
++
 .Procedure for CentOS 7.x operating system
 [%collapsible]
 ====
@@ -371,12 +358,7 @@ repolist: 21,433
 [root@localhost ~]#
 ----
 ====
-
-
-
-
-[[rocky-linux-10-9-8]]
-
++
 .Procedure for Rocky Linux 10, 9, or 8 operating systems
 [%collapsible]
 ====

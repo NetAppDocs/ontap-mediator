@@ -29,7 +29,7 @@ Reboot after updating ONTAP Mediator dependencies because changes do not take im
 
 SCST must be compiled for the kernel you are using. To update the OS, you need to schedule time for maintenance.
 
-=== Before you begin
+.Before you begin
 
 The following requirements apply when the SCST package is installed with ONTAP Mediator. 
 
