@@ -11,7 +11,7 @@ summary: "To upgrade ONTAP Mediator without upgrading the host OS, download the 
 [.lead]
 To upgrade ONTAP Mediator to a newer version without upgrading the host OS, download the installation package for the new version and run the installer on the host where ONTAP Mediator is already installed.
 
-* If you need to upgrade the host OS to a new release and reinstall or upgrade ONTAP Mediator as part of that process, see link:upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator] instead.
+NOTE: If you need to upgrade the host OS to a new release and reinstall or upgrade ONTAP Mediator as part of that process, see link:upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator] instead.
 
 .Before you begin
 

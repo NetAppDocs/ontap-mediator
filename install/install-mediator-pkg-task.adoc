@@ -11,7 +11,7 @@ summary: "To install ONTAP Mediator, you must get the installation package and r
 [.lead] 
 To install ONTAP Mediator, you must get the installation package and run the installer on the host.
 
-* To upgrade an existing ONTAP Mediator installation, see link:../administer/upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator] instead.
+NOTE: To upgrade an existing ONTAP Mediator installation, see link:../administer/upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator] instead.
 
 .About this task
 

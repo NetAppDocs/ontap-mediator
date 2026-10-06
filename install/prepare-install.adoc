@@ -11,8 +11,11 @@ summary: To install ONTAP Mediator, you must ensure all prerequisites are met, g
 [.lead]
 To install ONTAP Mediator, you need to meet all prerequisites, download the installation package, and run the installer on the host.
 
+[NOTE]
+====
 * To upgrade ONTAP Mediator to a new version, see link:../administer/upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
 * If you need to upgrade the host OS and reinstall or upgrade ONTAP Mediator as part of that process, see link:../administer/upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator].
+====
 
 == Installation requirements
 
