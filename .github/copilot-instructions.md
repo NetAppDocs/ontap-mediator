@@ -1,8 +1,7 @@
 # Copilot instructions for ONTAP Mediator documentation
 
 ## Repository overview
-
-ONTAP Mediator
+Product: ONTAP Mediator
 
 ONTAP Mediator supports SnapMirror active sync and MetroCluster IP by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness.
 
