@@ -1,21 +1,21 @@
 ---
-permalink: install-mediator-pkg-task.html
+permalink: install/install-mediator-pkg-task.html
 sidebar: sidebar
 keywords: mediator, new, release, update, install, package
 summary: "To install ONTAP Mediator, you must get the installation package and run the installer on the host."
 ---
 = Install the ONTAP Mediator installation package
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead] 
 To install ONTAP Mediator, you must get the installation package and run the installer on the host.
 
-* To upgrade an existing ONTAP Mediator installation, see link:upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator] instead.
+* To upgrade an existing ONTAP Mediator installation, see link:../administer/upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator] instead.
 
 .About this task
 
-include::./_include/https-only-mediator.adoc[]
+include::../_include/https-only-mediator.adoc[]
 
 * During installation or upgrade to ONTAP Mediator 1.12 or later, the installer prompts you to respond to the following:
 +
@@ -49,7 +49,7 @@ To skip signature check during installation, use the
 `./ontap-mediator-1.12.1/ontap-mediator-1.12.1 --skip-code-signature-check` command
 ====
 +
-The installer creates the required accounts and installs the required packages. If ONTAP Mediator is already installed, the installer prompts you to upgrade instead; for upgrade-specific steps and examples, see link:upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
+The installer creates the required accounts and installs the required packages. If ONTAP Mediator is already installed, the installer prompts you to upgrade instead; for upgrade-specific steps and examples, see link:../administer/upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
 +
 .Example ONTAP Mediator installation with HTTPS and iSCSI support (console output)
 [%collapsible]

@@ -1,12 +1,12 @@
 ---
-permalink: host-maintenance-task.html
+permalink: administer/host-maintenance-task.html
 sidebar: sidebar
 keywords: mediator, maintain, host, maintenance, package update, kernel upgrade, change hostname, change IP, self-signed certificate, self signed certificate
 summary: "Maintain the host OS for ONTAP Mediator regularly for optimal performance."
 ---
 = Maintain the host OS for ONTAP Mediator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Ensure the host OS for ONTAP Mediator is maintained regularly to achieve optimal performance.
@@ -34,7 +34,7 @@ SCST must be compiled for the kernel you are using. To update the OS, you need t
 The following requirements apply when the SCST package is installed with ONTAP Mediator. 
 
 * You can update all library packages except the kernel, but you might need to reboot to apply changes in ONTAP Mediator. Schedule downtime if you need to reboot.
-* You should keep the OS kernel up to date. Upgrade the kernel core to a supported version listed in the link:support-matrix.html#scst-support-matrix[ONTAP Mediator version matrix]. You must reboot the system, so plan a maintenance window for the outage.
+* You should keep the OS kernel up to date. Upgrade the kernel core to a supported version listed in the link:../release-notes/support-matrix.html#scst-support-matrix[ONTAP Mediator version matrix]. You must reboot the system, so plan a maintenance window for the outage.
 ** Uninstall the SCST kernel module before you reboot, and then reinstall it afterwards.
 ** Prepare a supported version of SCST to reinstall before you start the kernel OS upgrade.
 
@@ -43,7 +43,7 @@ NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only,
 .Steps
 Follow these steps to upgrade the host OS kernel.
 
-NOTE: Before upgrading the kernel, check that the OS and ONTAP Mediator version are compatible. For supported versions, see the link:support-matrix.html#os-support-matrix[OS support matrix].
+NOTE: Before upgrading the kernel, check that the OS and ONTAP Mediator version are compatible. For supported versions, see the link:../release-notes/support-matrix.html#os-support-matrix[OS support matrix].
 
 . Stop ONTAP Mediator.
 . Uninstall the SCST package, see <<Perform host maintenance>>.  (SCST doesn't provide an upgrade mechanism.)

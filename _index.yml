@@ -11,13 +11,13 @@ indexpage:
       - title: Quick start
         url: /quick-start.html
       - title: Release notes
-        url: /whats-new-in-ontap-mediator.html
+        url: /release-notes/whats-new-in-ontap-mediator.html
   - title: Install, upgrade, and configure
     links:
       - title: Install ONTAP Mediator 
-        url: /workflow-summary.html
+        url: /install/workflow-summary.html
       - title: Upgrade ONTAP Mediator
-        url: /upgrade-ontap-mediator-task.html
+        url: /administer/upgrade-ontap-mediator-task.html
       - title: Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP
         url: /use-mediator-snapmirror-metrocluster-task.html
   - title: More resources

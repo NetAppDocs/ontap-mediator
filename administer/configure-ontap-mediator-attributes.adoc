@@ -1,12 +1,12 @@
 ---
-permalink: configure-ontap-mediator-attributes.html
+permalink: administer/configure-ontap-mediator-attributes.html
 sidebar: sidebar
 keywords: mediator, configuration, attributes, ssl, certificates
 summary: "Configure ONTAP Mediator attributes, including certificate-related settings and host-side configuration overrides."
 ---
 = Configure ONTAP Mediator attributes
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can configure ONTAP Mediator host-side attributes, including certificate-related settings and configuration overrides.

@@ -1,12 +1,12 @@
 ---
-permalink: replace-self-signed-certificates-task.html
+permalink: administer/replace-self-signed-certificates-task.html
 sidebar: sidebar
 keywords: mediator, certificate, self-signed, trusted third-party, CA
 summary: "Replace ONTAP Mediator self-signed certificates with trusted certificates."
 ---
 = Replace ONTAP Mediator self-signed certificates with trusted third-party certificates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 If your environment supports it, replace self-signed certificates with trusted certificates issued by a certificate authority.

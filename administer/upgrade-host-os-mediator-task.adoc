@@ -1,12 +1,12 @@
 ---
-permalink: upgrade-host-os-mediator-task.html
+permalink: administer/upgrade-host-os-mediator-task.html
 sidebar: sidebar
 keywords: mediator, new, release, update, install,
 summary: "As part of the installation process, you upgrade the host operating system and then the ONTAP Mediator."
 ---
 = Upgrade the host OS and reinstall or upgrade ONTAP Mediator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To upgrade the host OS for ONTAP Mediator with SCST installed to a later version, you must uninstall ONTAP Mediator. After the OS upgrade, you can reinstall your current version of ONTAP Mediator or upgrade to a newer version. 

@@ -1,12 +1,12 @@
 ---
-permalink: upgrade-ontap-mediator-task.html
+permalink: administer/upgrade-ontap-mediator-task.html
 sidebar: sidebar
 keywords: mediator, upgrade, update, install, package
 summary: "To upgrade ONTAP Mediator without upgrading the host OS, download the installation package for the new version and run the installer on your existing ONTAP Mediator host."
 ---
 = Upgrade ONTAP Mediator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To upgrade ONTAP Mediator to a newer version without upgrading the host OS, download the installation package for the new version and run the installer on the host where ONTAP Mediator is already installed.
@@ -15,9 +15,9 @@ To upgrade ONTAP Mediator to a newer version without upgrading the host OS, down
 
 .Before you begin
 
-* Verify that your host meets the prerequisites described in link:prepare-install.html[Prepare to install ONTAP Mediator], including the host, firewall, and OS requirements.
-* Download the installation package for the new version. See link:download-install-pkg-task.html[Download the ONTAP Mediator installation package].
-* NetApp recommends verifying the code signature of the new installation package. See link:verify-code-signature-task.html[Verify the code signature of the ONTAP Mediator installation package].
+* Verify that your host meets the prerequisites described in link:../install/prepare-install.html[Prepare to install ONTAP Mediator], including the host, firewall, and OS requirements.
+* Download the installation package for the new version. See link:../install/download-install-pkg-task.html[Download the ONTAP Mediator installation package].
+* NetApp recommends verifying the code signature of the new installation package. See link:../install/verify-code-signature-task.html[Verify the code signature of the ONTAP Mediator installation package].
 
 .About this task
 
@@ -25,7 +25,7 @@ Review the following information before upgrading ONTAP Mediator.
 
 * You should upgrade ONTAP Mediator to the latest version. Older versions still work with all ONTAP releases, but newer versions include security patches for third-party components.
 
-* When you upgrade to a new ONTAP Mediator version that includes the SCST package, the installer automatically upgrades to the recommended SCST version unless a higher version is available. For instructions on manually installing a higher SCST version, see link:host-maintenance-task.html[Maintain the host OS for ONTAP Mediator]. For supported versions, see the link:support-matrix.html#scst-support-matrix[SCST support matrix].
+* When you upgrade to a new ONTAP Mediator version that includes the SCST package, the installer automatically upgrades to the recommended SCST version unless a higher version is available. For instructions on manually installing a higher SCST version, see link:host-maintenance-task.html[Maintain the host OS for ONTAP Mediator]. For supported versions, see the link:../release-notes/support-matrix.html#scst-support-matrix[SCST support matrix].
 
 [NOTE]
 ====
@@ -33,7 +33,7 @@ Review the following information before upgrading ONTAP Mediator.
 * From June 15, 2025, you can't install or upgrade ONTAP Mediator 1.9 and 1.8 because their code signing certificates have expired. If the upgrade fails, use the ONTAP Mediator 1.9.1 patch version instead.
 ====
 
-include::./_include/https-only-mediator.adoc[]
+include::../_include/https-only-mediator.adoc[]
 
 * When you run the installer against an existing ONTAP Mediator installation, it detects the current version and prompts you to confirm the upgrade:
 +

@@ -1,18 +1,18 @@
 ---
-permalink: prepare-install.html
+permalink: install/prepare-install.html
 sidebar: sidebar
 keywords: ontap mediator, install requirements, mediator requirements
 summary: To install ONTAP Mediator, you must ensure all prerequisites are met, get the installation package, and run the installer on the host.
 ---
 = Prepare to install ONTAP Mediator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To install ONTAP Mediator, you need to meet all prerequisites, download the installation package, and run the installer on the host.
 
-* To upgrade ONTAP Mediator to a new version, see link:upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
-* If you need to upgrade the host OS and reinstall or upgrade ONTAP Mediator as part of that process, see link:upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator].
+* To upgrade ONTAP Mediator to a new version, see link:../administer/upgrade-ontap-mediator-task.html[Upgrade ONTAP Mediator].
+* If you need to upgrade the host OS and reinstall or upgrade ONTAP Mediator as part of that process, see link:../administer/upgrade-host-os-mediator-task.html[Upgrade the host OS and ONTAP Mediator].
 
 == Installation requirements
 
@@ -37,7 +37,7 @@ Before installing ONTAP Mediator, review the following information:
 * In ONTAP Mediator, the SCST package is used to provide iSCSI for communication in MetroCluster IP configurations. The SCST package is a kernel module that is compiled during installation. Beginning with ONTAP 9.19.1 and Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS instead of iSCSI to monitor a MetroCluster IP configuration.
 
 
-include::./_include/https-only-mediator.adoc[]
+include::../_include/https-only-mediator.adoc[]
 
 
 == Host requirements 
@@ -133,7 +133,7 @@ Your OS must meet the following requirements:
 * User: Root access
 
 The following table shows the supported OSs for each version of ONTAP Mediator.
-include::./_include/mediator-linux-support.adoc[]
+include::../_include/mediator-linux-support.adoc[]
 
 .OS required packages
 

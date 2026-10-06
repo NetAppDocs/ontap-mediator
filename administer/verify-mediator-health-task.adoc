@@ -1,12 +1,12 @@
 ---
-permalink: verify-mediator-health-task.html
+permalink: administer/verify-mediator-health-task.html
 sidebar: sidebar
 keywords: mediator, verify, health, status, systemctl, netstat
 summary: "Verify that ONTAP Mediator is healthy and listening on the expected ports."
 ---
 = Verify ONTAP Mediator health
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Verify that ONTAP Mediator is running normally.

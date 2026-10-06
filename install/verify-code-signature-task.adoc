@@ -1,12 +1,12 @@
 ---
-permalink: verify-code-signature-task.html
+permalink: install/verify-code-signature-task.html
 sidebar: sidebar
 keywords: mediator, new, release, update, install, verify, code, signature
 summary: "You should verify the ONTAP Mediator code signature before installing the Mediator installation package."
 ---
 = Verify the ONTAP Mediator code signature
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 NetApp recommends verifying the ONTAP Mediator code signature before installation. This step is optional.

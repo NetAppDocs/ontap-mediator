@@ -1,12 +1,12 @@
 ---
-permalink: troubleshoot-certificate-issues-task.html
+permalink: administer/troubleshoot-certificate-issues-task.html
 sidebar: sidebar
 keywords: mediator, certificate, troubleshoot, verify, expiration, x509, OpenSSL
 summary: "Check ONTAP Mediator certificate properties to diagnose certificate issues."
 ---
 = Troubleshoot ONTAP Mediator certificate-related issues
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Use these checks to verify certificate properties when troubleshooting certificate issues.

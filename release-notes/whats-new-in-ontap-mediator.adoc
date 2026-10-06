@@ -1,12 +1,12 @@
 ---
-permalink: whats-new-in-ontap-mediator.html
+permalink: release-notes/whats-new-in-ontap-mediator.html
 sidebar: sidebar
 keywords: mediator, new, release, update, install, what's new
 summary: "New capabilities of the ONTAP Mediator are included with each release."
 ---
 = What's new in ONTAP Mediator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 New enhancements to ONTAP Mediator are provided with each release.
@@ -39,7 +39,7 @@ a|
 ** Recommended: 10.2, 10.0, 9.8, 9.6, 9.4, and 8.10.
 * Support for Rocky Linux 10.2, 9.8, and 8.10.
 * Support for Oracle Linux 10.1 and 9.7 with both rhck and uek kernels.
-* Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS for communication in MetroCluster IP configurations. HTTPS provides increased security by encrypting entire sessions using SSL/TLS. You can choose to install ONTAP Mediator with support for HTTPS only. The SCST package is not installed if this installation method is used. link:prepare-install.html#https-iscsi-installation[Learn more about HTTPS and iSCSI installation options for ONTAP Mediator].
+* Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS for communication in MetroCluster IP configurations. HTTPS provides increased security by encrypting entire sessions using SSL/TLS. You can choose to install ONTAP Mediator with support for HTTPS only. The SCST package is not installed if this installation method is used. link:../install/prepare-install.html#https-iscsi-installation[Learn more about HTTPS and iSCSI installation options for ONTAP Mediator].
 
 a| 1.11 
 a| 

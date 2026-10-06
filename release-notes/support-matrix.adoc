@@ -1,12 +1,12 @@
 ---
-permalink: support-matrix.html
+permalink: release-notes/support-matrix.html
 sidebar: sidebar
 keywords: mediator, support matrix, OS support, SCST support, release notes
 summary: "Operating system and SCST support information for ONTAP Mediator."
 ---
 = ONTAP Mediator support matrix
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The ONTAP Mediator support matrix includes operating system and SCST version support information.

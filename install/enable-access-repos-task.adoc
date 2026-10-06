@@ -1,12 +1,12 @@
 ---
-permalink: enable-access-repos-task.html
+permalink: install/enable-access-repos-task.html
 sidebar: sidebar
 keywords: mediator, new, release, update, install,
 summary: "Enable access to repositories so ONTAP Mediator can access the required packages during the installation process."
 ---
 = Provide repository access for ONTAP Mediator installation
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You should enable access to repositories so that ONTAP Mediator can access the required packages during the installation process.

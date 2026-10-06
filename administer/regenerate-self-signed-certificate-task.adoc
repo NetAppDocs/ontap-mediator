@@ -1,12 +1,12 @@
 ---
-permalink: regenerate-self-signed-certificate-task.html
+permalink: administer/regenerate-self-signed-certificate-task.html
 sidebar: sidebar
 keywords: mediator, certificate, self-signed, regenerate, hostname, IP address
 summary: "Regenerate a temporary self-signed certificate when the host name or IP address changes."
 ---
 = Regenerate a temporary self-signed certificate for the ONTAP Mediator host
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Regenerate a temporary self-signed certificate for the current host when a hostname or IP address change invalidates the existing certificate.
