@@ -9,7 +9,7 @@ ONTAP Mediator supports SnapMirror active sync and MetroCluster IP by providing 
 ## Repository structure
 
 - `administer/` – Post-install administration topics: credentials, start/stop, health checks, certificate management, host OS maintenance, uninstall, and both ONTAP Mediator upgrade paths (software-only and host OS and Mediator upgrade).
-- `install/` – The full installation workflow, starting from prerequisites through verifying the installation.
+- `install/` – The full installation workflow, from prerequisites through verifying the installation.
 - `release-notes/` – What's new content and the OS and SCST support matrix.
 - `_include/` –  Shared procedural content reused across multiple topics.
 - `media/` - Images and source files used by documentation pages.
