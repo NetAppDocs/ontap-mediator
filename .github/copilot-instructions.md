@@ -25,7 +25,7 @@ Product name usage:
 - **Two distinct upgrade paths:** "Upgrade ONTAP Mediator" (software only, no host OS change) and "Upgrade the host OS and ONTAP Mediator" (host OS version upgrade via the leapp tool, which requires uninstalling and reinstalling Mediator) are separate topics under `administer/`. Don't merge their content.
 - **Quorum witness / MAUSO:** For SnapMirror active sync, Mediator acts as a passive quorum witness. For MetroCluster IP, it enables Mediator-assisted automatic unplanned switchover (MAUSO). These are two distinct use cases — don't conflate them when describing Mediator's role.
 
-## Optional: Typical user workflows
+## Typical user workflows
 
 - **Install:** Prepare prerequisites → enable repo access → download package → verify code signature → install package → verify installation → configure for SnapMirror active sync and/or MetroCluster IP.
 - **Upgrade (software only):** Review upgrade considerations → run the installer against the existing install → verify installation.
