@@ -74,5 +74,4 @@ NOTE: You should coordinate any updates to the server OS kernel with a maintenan
 Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS or iSCSI to monitor a MetroCluster IP configuration. You can choose to install ONTAP Mediator with support for both iSCSI and HTTPS or HTTPS only. If ONTAP Mediator is installed with support for HTTPS only, the SCST package is not installed. Refer to link:install/prepare-install.html#https-iscsi-installation[HTTPS and iSCSI installation options for ONTAP Mediator] for more information.
 
 
-
-
+// repo migration, ONTAPDOC-4248, 2026 OCT 15
