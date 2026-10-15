@@ -19,6 +19,16 @@ NOTE: For OS and SCST version information, see the link:support-matrix.html[Supp
 
 h| ONTAP Mediator version h| Enhancements
 
+a| 1.13
+a| 
+* Support for RHEL:
+** Compatible: 10.1, 9.7, and 9.5.
+** Recommended: 10.2, 10.0, 9.8, 9.6, 9.4, and 8.10.
+* Support for Rocky Linux 10.2, 10.1, 10.0, 9.8, 9.7, 9.6, 9.4, and 8.10.
+* Support for Oracle Linux 10.1 (rhck and uek kernels), 10.0 (uek kernel), 9.8 (uek kernel), 9.7 (rhck and uek kernels), and 9.6 (rhck kernel).
+* The self-signed CA certificates now include a unique per-installation identifier in their common name, for example `ONTAP Mediator CA 1a2b3c4d`. This enables you to register several ONTAP Mediator instances with the same ONTAP cluster. If your ONTAP Mediator must pair with an ONTAP release that does not recognize the identifier, you can switch to the legacy fixed common name. link:../administer/switch-ca-certificate-naming-task.html[Learn how to switch to the legacy CA certificate common name].
+
+
 a| 1.12.1
 a| 
 * Support for RHEL:
