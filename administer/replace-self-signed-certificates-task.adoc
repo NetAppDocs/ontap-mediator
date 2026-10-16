@@ -30,7 +30,7 @@ image:mediator-cert-purposes.png[ONTAP Mediator certificate purposes]
 +
 image:mediator-certs-index.png[Web server setup and ONTAP Mediator setup configuration]
 
-=== Step 1: Obtain a certificate from a third-party issuing a CA certificate
+== Step 1: Obtain a certificate from a third-party issuing a CA certificate
 
 You can obtain a certificate from a PKI authority using the following procedure.
 
@@ -110,7 +110,7 @@ NOTE: For SnapMirror active sync clusters, you must add the `ca.crt` and `root_c
 --
 ====
 
-=== Step 2: Generate a server certificate by signing with a third-party CA certification
+== Step 2: Generate a server certificate by signing with a third-party CA certification
 
 [role="tabbed-block"]
 ====
@@ -156,7 +156,7 @@ NOTE: These files were obtained from a PKI authority. If you are using a differe
 --
 ====
 
-=== Step 3: Replace new third-party CA certificate and server certificate in ONTAP Mediator configuration
+== Step 3: Replace new third-party CA certificate and server certificate in ONTAP Mediator configuration
 
 [role="tabbed-block"]
 ====
@@ -306,7 +306,7 @@ Update the values of `mediator_cert`, `mediator_key`, and `ca_certificate`:
 --
 ====
 
-=== Step 4: Optionally, use a different path or name for your third-party certificates
+== Step 4: Optionally, use a different path or name for your third-party certificates
 
 [role="tabbed-block"]
 ====
@@ -509,3 +509,5 @@ NOTE: For SnapMirror Business Continuity (SM-BC) clusters, you must add the `ca.
 `systemctl restart ontap_mediator`
 --
 ====
+
+// repo migration, ONTAPDOC-4248, 2026 OCT 15

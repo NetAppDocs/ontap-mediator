@@ -37,3 +37,5 @@ link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediato
 
 * link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/architecture-concept.html[ONTAP SnapMirror active sync architecture^]
 * link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept-ontap-mediator-supports-automatic-unplanned-switchover.html[Learn about ONTAP Mediator support for automatic unplanned switchover in a MetroCluster IP configuration^]
+
+// repo migration, ONTAPDOC-4248, 2026 OCT 15

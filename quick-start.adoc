@@ -28,3 +28,5 @@ Depending on whether you want to link:use-mediator-snapmirror-metrocluster-task.
 
 == What's next?
 You can now use ONTAP Mediator to monitor MetroCluster IP configurations, SnapMirror active sync configurations, or both. For more information, refer to the link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html[SnapMirror active sync documentation^] and link:https://docs.netapp.com/us-en/ontap-metrocluster/index.html[MetroCluster documentation^].
+
+// repo migration, ONTAPDOC-4248, 2026 OCT 15
