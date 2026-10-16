@@ -26,9 +26,9 @@ Do you wish to install ONTAP Mediator with iSCSI and HTTPS support? Y(es)/n(o):`
 
 ** Respond `No` if you plan to only use ONTAP Mediator for SnapMirror active sync, or if you plan to configure ONTAP Mediator with HTTPS to monitor one or more MetroCluster IP configurations. 
 +
-Alternatively, you can use the `--https-only` option in the `./ontap-mediator-1.12.1/ontap-mediator-1.12.1` command to specify HTTPS only.
+Alternatively, you can use the `--https-only` option in the `./ontap-mediator-1.13.0/ontap-mediator-1.13.0` command to specify HTTPS only.
 
-* For automation use cases, you can use the `./ontap-mediator-1.12.1/ontap-mediator-1.12.1 -y` command to skip the installer prompts.
+* For automation use cases, you can use the `./ontap-mediator-1.13.0/ontap-mediator-1.13.0 -y` command to skip the installer prompts.
 
 .Steps
 
@@ -45,9 +45,6 @@ Alternatively, you can use the `--https-only` option in the `./ontap-mediator-1.
 +
 [NOTE] 
 ====
-To skip installer prompts during installation, use the
-`./ontap-mediator-1.13.0/ontap-mediator-1.13.0 -y` command
-
 To skip signature check during installation, use the
 `./ontap-mediator-1.13.0/ontap-mediator-1.13.0 --skip-code-signature-check` command
 ====
