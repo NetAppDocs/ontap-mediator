@@ -45,6 +45,8 @@ CGroup: /system.slice/ontap_mediator.service
 
 .. View the status of the SCST service:
 +
+NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only, the SCST package is not installed and you can skip this task.
++
 [source,cli]
 ----
 systemctl status mediator-scst

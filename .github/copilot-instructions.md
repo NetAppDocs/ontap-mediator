@@ -22,7 +22,7 @@ Product name usage:
 - **Communication protocols:** ONTAP Mediator uses either iSCSI (via the bundled SCST kernel module) or HTTPS for communication with ONTAP. HTTPS-only installs (Mediator 1.12 and later) skip SCST entirely.
 - **SCST package:** Provides iSCSI support and is tied to the host kernel version; upgrading the host OS kernel can require reinstalling SCST. 
 - **Two distinct upgrade paths:** "Upgrade ONTAP Mediator" (software only, no host OS change) and "Upgrade the host OS and ONTAP Mediator" (host OS version upgrade via the leapp tool, which requires uninstalling and reinstalling Mediator) are separate topics under `administer/`. Don't merge their content.
-- **Quorum witness / MAUSO:** For SnapMirror active sync, Mediator acts as a passive quorum witness. For MetroCluster IP, it enables Mediator-assisted automatic unplanned switchover (MAUSO). These are two distinct use cases — don't conflate them when describing Mediator's role.
+- **Quorum witness / MAUSO:** For SnapMirror active sync, Mediator acts as a passive quorum witness. For MetroCluster IP, it enables Mediator-assisted automatic unplanned switchover (MAUSO). 
 
 ## Typical user workflows
 

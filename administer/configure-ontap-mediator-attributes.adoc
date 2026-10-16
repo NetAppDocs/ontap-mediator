@@ -118,7 +118,7 @@ The following settings provide protection against brute-force password guessing 
 
 To enable the feature, set a value for the `window_seconds` and the `retry_limit`.
 
-Examples:
+.Examples:
 --
 ** Provide a 5-minute window for guesses, and then reset the count to zero failures:
 +

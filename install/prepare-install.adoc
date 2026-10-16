@@ -23,7 +23,7 @@ Review the following requirements before installing ONTAP Mediator.
 
 [NOTE]
 ====
-* ONTAP Mediator 1.8 and earlier is not compatible with Red Hat Enterprise Linux (RHEL) FIPS mode and prevents it from installing successfully. You can check if FIPS mode is enabled using the `fips-mode-setup --check` command. You can disable FIPS mode using the `fips-modesetup --disable` command. Reboot after disabling FIPS mode to successfully install ONTAP Mediator 1.8 or earlier.
+* ONTAP Mediator 1.8 and earlier is not compatible with Red Hat Enterprise Linux (RHEL) FIPS mode and prevents it from installing successfully. You can check if FIPS mode is enabled using the `fips-mode-setup --check` command. You can disable FIPS mode using the `fips-mode-setup --disable` command. Reboot after disabling FIPS mode to successfully install ONTAP Mediator 1.8 or earlier.
 * If the installation fails, you might need to try a newer version of ONTAP Mediator. 
 * From June 15, 2025, you can't install or upgrade ONTAP Mediator 1.9 and 1.8 because their code signing certificates have expired. If the installation fails, use the ONTAP Mediator 1.9.1 patch version instead. 
 ====
