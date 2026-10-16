@@ -135,7 +135,7 @@ Your OS must meet the following requirements:
 * 1 GB disk space (used for applications installation, server logs, and the database)
 * User: Root access
 
-Review the link:../support-matrix.html[OS support matrix] for supported OSs for each version of ONTAP Mediator.
+Review the link:../release-notes/support-matrix.html[OS support matrix] for supported OSs for each version of ONTAP Mediator.
 
 .OS required packages
 
