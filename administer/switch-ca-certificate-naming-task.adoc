@@ -9,7 +9,7 @@ summary: "Switch ONTAP Mediator to the legacy fixed CA certificate common name w
 :imagesdir: ../media/
 
 [.lead]
-Starting with ONTAP Mediator 1.13, the self-signed CA certificates include a per-installation identifier in their common name. If your ONTAP Mediator must pair with an ONTAP release that does not recognize this identifier, switch to the legacy fixed common name.
+Beginning with ONTAP Mediator 1.13, the self-signed CA certificates include a per-installation identifier in their common name. If your ONTAP Mediator must pair with an ONTAP release that does not recognize this identifier, switch to the legacy fixed common name.
 
 By default, the ONTAP Mediator CA certificates carry a per-installation identifier in their common name, for example `ONTAP Mediator CA 1a2b3c4d`. This enables you to register several ONTAP Mediator instances with the same ONTAP cluster, because ONTAP refuses to install two CA certificates that share a subject name but hold different keys.
 
