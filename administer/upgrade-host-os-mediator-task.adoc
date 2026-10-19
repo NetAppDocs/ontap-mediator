@@ -43,10 +43,10 @@ To upgrade the host OS for ONTAP Mediator with SCST installed to a later version
 . Perform upgrade with leapp-upgrade tool:
 +
 ....
-[rootmediator-host ~]# leapp preupgrade --target 8.4
+[rootmediator-host ~]# leapp preupgrade --target 9.8
   ..<snip upgrade checks>..
   ..<fix issues found>..
-[rootmediator-host ~]# leapp upgrade --target 8.4
+[rootmediator-host ~]# leapp upgrade --target 9.8
   ..<snip upgrade>..
 [rootmediator-host ~]# cat /etc/os-release | head -2
 NAME="Red Hat Enterprise Linux"
