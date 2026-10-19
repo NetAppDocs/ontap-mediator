@@ -1,0 +1,90 @@
+---
+permalink: install/verify-install-task.html
+sidebar: sidebar
+keywords: mediator, new, release, update, install, verify, verification
+summary: "After the ONTAP Mediator has been installed, you should verify that the ONTAP Mediator are running."
+---
+= Verify the ONTAP Mediator installation status
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you install ONTAP Mediator, verify that it is running successfully.
+
+.Steps
+
+. View the status of ONTAP Mediator:
++ 
+[source,cli]
+----
+systemctl status ontap_mediator
+----
++
+....
+ ontap_mediator.service - ONTAP Mediator
+Loaded: loaded (/etc/systemd/system/ontap_mediator.service; enabled; vendor preset: disabled)
+Active: active (running) since Mon 2022-04-18 10:41:49 EDT; 1 weeks 0 days ago
+Process: 286710 ExecStop=/bin/kill -s INT $MAINPID (code=exited, status=0/SUCCESS)
+Main PID: 286712 (uwsgi)
+Status: "uWSGI is ready"
+Tasks: 3 (limit: 49473)
+Memory: 139.2M
+CGroup: /system.slice/ontap_mediator.service
+      ├─286712 /opt/netapp/lib/ontap_mediator/pyenv/bin/uwsgi --ini /opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini
+      ├─286716 /opt/netapp/lib/ontap_mediator/pyenv/bin/uwsgi --ini /opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini
+      └─286717 /opt/netapp/lib/ontap_mediator/pyenv/bin/uwsgi --ini /opt/netapp/lib/ontap_mediator/uwsgi/ontap_mediator.ini
+....
+
+
+. View the SCST status:
++
+[source,cli]
+----
+systemctl status mediator-scst
+----
++
+NOTE: If you installed ONTAP Mediator 1.12 or later with support for HTTPS only, the SCST package is not installed and you can skip this step.
++
+....
+   Loaded: loaded (/etc/systemd/system/mediator-scst.service; enabled; vendor preset: disabled)
+   Active: active (running) since Mon 2022-04-18 10:41:47 EDT; 1 weeks 0 days ago
+  Process: 286595 ExecStart=/etc/init.d/scst start (code=exited, status=0/SUCCESS)
+ Main PID: 286662 (iscsi-scstd)
+    Tasks: 1 (limit: 49473)
+   Memory: 1.2M
+   CGroup: /system.slice/mediator-scst.service
+           └─286662 /usr/local/sbin/iscsi-scstd
+....
+
+. Confirm the ports that are used by ONTAP Mediator: 
++
+[source,cli]
+----
+netstat -anlt | grep -E '3260|31784'
+----
++
+....
+         tcp   0   0 0.0.0.0:31784   0.0.0.0:*      LISTEN
+
+         tcp   0   0 0.0.0.0:3260    0.0.0.0:*      LISTEN
+
+         tcp6  0   0 :::3260         :::*           LISTEN
+....
+
+.What's next?
+After ONTAP Mediator is installed and verified, you can proceed with the following post-installation configuration tasks:
+
+* link:../use-mediator-snapmirror-metrocluster-task.html[Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP]
+* link:../administer/configure-ontap-mediator-attributes.html[Configure ONTAP Mediator attributes] (Optional)
+
+// 2021-04-21 ONTAPEX-133437
+// 2021-05-05 review comment in IDR-67
+// ontap-metrocluster issue #146, 7 march 2022
+// 2022-04-28, BURT 1470656
+// january 2022 ontap-metrocluster/issues/35
+// 19 july 2022, ontap-issues-564
+// ONTAPDOC-955, 2023 May 05
+// ontapdoc-1906, 12 june 2024
+// ONTAPDOC-2920, 03 APR 2025
+// ONTAPDOC-2926, 19 MAY 2025
+// repo migration, ONTAPDOC-4248, 2026 OCT 15

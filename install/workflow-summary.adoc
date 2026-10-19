@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: install/workflow-summary.html
+keywords: cluster, setup, set up get started, workflow, summary
+summary: "NetApp recommends that you use System Manager to set up new clusters. System Manager provides a simple and easy workflow for cluster set up including assigning a node management IP address and initializing the cluster."
+---
+= ONTAP Mediator installation workflow summary
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Installing ONTAP Mediator includes preparing for the installation, providing access to repositories, downloading the installation package, verifying the code signature, and installing the ONTAP Mediator package.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:prepare-install.html[Prepare to install ONTAP Mediator]
+[role="quick-margin-para"]
+To install ONTAP Mediator, you must ensure that all prerequisites are met.
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:enable-access-repos-task.html[Provide repository access]
+[role="quick-margin-para"]
+You should enable access to repositories so that ONTAP Mediator can access the required packages during the installation process.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:download-install-pkg-task.html[Download the ONTAP Mediator installation package]
+[role="quick-margin-para"]
+Download the ONTAP Mediator installation package from the ONTAP Mediator download page.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:verify-code-signature-task.html[Verify the code signature of the ONTAP Mediator installation package]
+[role="quick-margin-para"]
+NetApp recommends verifying the ONTAP Mediator code signature before installing the ONTAP Mediator installation package.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-mediator-pkg-task.html[Install the ONTAP Mediator installation package]
+[role="quick-margin-para"]
+Download the installation package and run the installer on the host.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:verify-install-task.html[Verify the ONTAP Mediator installation]
+[role="quick-margin-para"]
+After you install ONTAP Mediator, verify that it is running successfully.
+
+
+// 2025 July 2, ONTAPDOC 2707
+// 2025 March 25, ONTAPDOC 1325
+// repo migration, ONTAPDOC-4248, 2026 OCT 15
