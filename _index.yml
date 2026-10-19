@@ -1,14 +1,34 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
-  tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
-      links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+  title: ONTAP Mediator documentation
+  lead: ONTAP Mediator supports SnapMirror active sync and MetroCluster IP by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness. 
+  summary: "ONTAP Mediator supports ONTAP features by providing a persistent and fenced store for high-availability (HA) metadata, synchronous node health query functionality to aid in quorum determination, and serving as a ping proxy for controller liveliness."
+  keywords: mediator, ONTAP, high-availability, HA, metadata, quorum, controller, liveliness, smbc, metrocluster, snapmirrror active sync
+  tiles:
+  - title: Get started 
+    links: 
+      - title: Learn about ONTAP Mediator
+        url: /learn-about.html
+      - title: Quick start
+        url: /quick-start.html
+      - title: Release notes
+        url: /release-notes/whats-new-in-ontap-mediator.html
+  - title: Install, upgrade, and configure
+    links:
+      - title: Install ONTAP Mediator 
+        url: /install/workflow-summary.html
+      - title: Upgrade ONTAP Mediator
+        url: /administer/upgrade-ontap-mediator-task.html
+      - title: Use ONTAP Mediator for SnapMirror active sync and MetroCluster IP
+        url: /use-mediator-snapmirror-metrocluster-task.html
+  - title: More resources
+    links:
+      - title: ONTAP 9 documentation
+        url: https://docs.netapp.com/us-en/ontap/
+      - title: MetroCluster documentation
+        url: https://docs.netapp.com/us-en/ontap-metrocluster/
+      - title: ONTAP REST API reference
+        url: https://docs.netapp.com/us-en/ontap-restapi/
+      - title: ONTAP CLI reference
+        url: https://docs.netapp.com/us-en/ontap-cli/
+
+  # Next tile on this page (title/links)
