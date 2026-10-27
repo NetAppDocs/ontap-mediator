@@ -67,7 +67,7 @@ The installer detects the existing installation and prompts you to upgrade, then
 
 ====
 ----
-[root@sdot-r730-0003a-d4 ~]# ontap-mediator-1.12.1/ontap-mediator-1.12.1 -y
+[root@sdot-r730-0003a-d4 ~]# ontap-mediator-1.13.0/ontap-mediator-1.13.0 -y
 
 ONTAP Mediator: Self Extracting Installer
 
@@ -410,7 +410,7 @@ Installed:
 
 Complete!
 OS package installations finished
-+ Installing ONTAP Mediator. (Log: /root/ontap_mediator.Mj8Xqs/ontap-mediator-1.12.1/ontap-mediator-1.12.1/install_20261016053632.log)
+ Installing ONTAP Mediator. (Log: /root/ontap_mediator.Mj8Xqs/ontap-mediator-1.13.0/ontap-mediator-1.13.0/install_20261016053632.log)
     This step will take several minutes. Use the log file to view progress.
     Sudoer config verified
     ONTAP Mediator rsyslog and logging rotation enabled
@@ -519,7 +519,7 @@ fapolicyd not installed or no rules.d directory found, skipping fapolicyd config
 ----
 
 [root@sdot-r730-0003a-d4 ~]#
-[root@sdot-r730-0003a-d4 ~]# ontap-mediator-1.12.1/ontap-mediator-1.12.1 --https-only
+[root@sdot-r730-0003a-d4 ~]# ontap-mediator-1.13.0/ontap-mediator-1.13.0 --https-only
 
 ONTAP Mediator: Self Extracting Installer
 
@@ -593,7 +593,7 @@ Dependencies resolved.
 Nothing to do.
 Complete!
 OS package installations finished
-+ Installing ONTAP Mediator. (Log: /root/ontap_mediator.cHNlJM/ontap-mediator-1.12.1/ontap-mediator-1.12.1/install_20261016073239.log)
+ Installing ONTAP Mediator. (Log: /root/ontap_mediator.cHNlJM/ontap-mediator-1.13.0/ontap-mediator-1.13.0/install_20261016073239.log)
     This step will take several minutes. Use the log file to view progress.
     Sudoer config verified
     ONTAP Mediator rsyslog and logging rotation enabled

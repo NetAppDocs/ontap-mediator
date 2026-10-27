@@ -46,7 +46,7 @@ If an ONTAP Mediator instance must pair with one of these releases, use the lega
 [root@localhost ~]# sudo systemctl restart ontap_mediator
 ----
 
-. On every paired ONTAP cluster, perform the following actions:
+. On every paired ONTAP cluster where self-signed CA certificates are used, perform the following actions:
 .. Remove ONTAP Mediator.
 .. Delete the previously installed CA certificates.
 .. Install the regenerated `root_ca.crt` and `intermediate.crt` certificates.
