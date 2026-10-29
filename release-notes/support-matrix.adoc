@@ -167,10 +167,10 @@ a| No
 
 a| RHEL 9.5
 a| Compatible
-a| No
-a| No
-a| No
-a| No
+a| Compatible
+a| Compatible
+a| Compatible
+a| Compatible
 a| Yes
 a| No
 a| No
