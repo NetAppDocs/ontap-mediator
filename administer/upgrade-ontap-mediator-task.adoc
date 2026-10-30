@@ -134,8 +134,6 @@ fapolicyd not installed or no rules.d directory found, skipping fapolicyd config
 
 ====
 ----
-
-[root@mediator-host ~]#
 [root@mediator-host ~]# ontap-mediator-1.13.0/ontap-mediator-1.13.0 --https-only
 
 ONTAP Mediator: Self Extracting Installer

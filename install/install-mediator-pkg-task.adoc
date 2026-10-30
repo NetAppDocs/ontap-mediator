@@ -429,19 +429,6 @@ OS package installations finished
 
 ====
 ----
-
-[root@localhost ~]# tar -xvf ontap-mediator-1.13.0.tgz
-ontap-mediator-1.13.0/
-ontap-mediator-1.13.0/csc-prod-ONTAP-Mediator.pem
-ontap-mediator-1.13.0/tsa-prod-ONTAP-Mediator.pem
-ontap-mediator-1.13.0/csc-prod-chain-ONTAP-Mediator.pem
-ontap-mediator-1.13.0/tsa-prod-chain-ONTAP-Mediator.pem
-ontap-mediator-1.13.0/ONTAP-Mediator-production.pub
-ontap-mediator-1.13.0/ontap-mediator-1.13.0
-ontap-mediator-1.13.0/ontap-mediator-1.13.0.sig
-ontap-mediator-1.13.0/ontap-mediator-1.13.0.tsr
-ontap-mediator-1.13.0/ontap-mediator-1.13.0.sig.tsr
-[root@localhost ~]# 
 [root@localhost ~]# ontap-mediator-1.13.0/ontap-mediator-1.13.0  --https-only
 
 ONTAP Mediator: Self Extracting Installer
