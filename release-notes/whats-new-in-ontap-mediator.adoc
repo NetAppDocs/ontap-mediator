@@ -54,8 +54,9 @@ a|
 a| 1.11 
 a| 
 * Support for RHEL:
-** Compatible: 10.1, 10.0, 9.7, 9.6, 9.5, 9.4, and 8.10.
-* Support for Rocky Linux 10.1, 9.7, and 8.10.
+** Compatible: 9.5.
+** Recommended: 10.1, 10.0, 9.7, 9.6, 9.4, and 8.10.
+* Support for Rocky Linux 10.1, 10.0, 9.7, and 8.10.
 * Support for Oracle Linux 10.0 and 9.6 with both rhck and uek kernels.
 * Adds support for IPv6 for MetroCluster IP configurations.
 * Adds support for fapolicyd.
@@ -64,8 +65,8 @@ a| 1.10
 a| 
 * Support for RHEL:
 ** Compatible: 10.0, 9.6, 9.5, 9.4, and 8.10.
-** Recommended: 9.6, 9.4, and 8.10.
-* Support for Rocky Linux 10.0, 9.6, and 8.10.
+** Recommended: 10.0, 9.6, 9.4, and 8.10.
+* Support for Rocky Linux 10.0, 9.6, 9.4, and 8.10.
 * Upgrades the base Python version from Python 3.9 to Python 3.12.
 
 a| 1.9.1 

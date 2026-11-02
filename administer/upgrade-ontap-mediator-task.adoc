@@ -47,6 +47,18 @@ include::../_include/https-only-mediator.adoc[]
 
 .Steps
 
+. Before the upgrade, complete the following substep if you are upgrading to ONTAP Mediator 1.13 or later on an ONTAP Mediator instance that pairs with one of the following releases:
++
+* ONTAP 9.11.1 and earlier
+* ONTAP releases earlier than 9.12.1P15, 9.13.1P12, 9.14.1P8, and 9.15.1P2 
+
+.. Add the following line to the `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.user_config.yaml` file.
++
+`'generate_unique_ca_name': false`
++
+This file is preserved across ONTAP Mediator upgrades.
+
+
 . Run the installer for the new version and respond to the prompts as required:
 +
 [source,cli]
@@ -67,24 +79,27 @@ The installer detects the existing installation and prompts you to upgrade, then
 
 ====
 ----
-[root@mediator-host ~]# ontap-mediator-1.13.0/ontap-mediator-1.13.0 -y
-
-ONTAP Mediator: Self Extracting Installer
+[root@mediator-host ~]# ontap-mediator-1.13.0/ontap-mediator-1.13.0 
 
 + Extracting the ONTAP Mediator installation/upgrade archive
 + Performing the ONTAP Mediator run-time code signature check
    Using openssl from the path: /usr/bin/openssl configured for CApath:/etc/pki/tls
 Error querying OCSP responder
-40C7223F1E7F0000:error:1E800080:HTTP routines:OSSL_HTTP_REQ_CTX_nbio:failed reading data:crypto/http/http_client.c:614:
-40C7223F1E7F0000:error:1E800067:HTTP routines:OSSL_HTTP_REQ_CTX_exchange:error receiving:crypto/http/http_client.c:1075:server=http://ocsp.entrust.net:80
+40B70028217F0000:error:1E800080:HTTP routines:OSSL_HTTP_REQ_CTX_nbio:failed reading data:crypto/http/http_client.c:596:
+40B70028217F0000:error:1E800067:HTTP routines:OSSL_HTTP_REQ_CTX_exchange:error receiving:crypto/http/http_client.c:1046:server=http://ocsp.entrust.net:80
    WARNING: The OCSP check failed while attempting to test the Code-Signature-Check certificate
+   Continue without code signature checking (only recommended if integrity has been established manually)? y(es)/N(o): yes
  SKIPPING: Code signature check, manual override due to lack of OCSP response
 + Unpacking the ONTAP Mediator installer
 + ONTAP_MEDIATOR_INSTALL_HTTPS_ONLY is set to '0', args are: ''
-+ Starting ONTAP Mediator install/update process: previous installation_mode is 'ISCSI_HTTPS'
-+ Using saved installation mode from previous install: ISCSI_HTTPS
-+ Selected install package mode: ISCSI_HTTPS
++ Starting ONTAP Mediator install/update process: previous installation_mode is ''
+
+
+ONTAP Mediator can be installed with iSCSI and HTTPS support, or HTTPS support only.
+Do you wish to install ONTAP Mediator with iSCSI and HTTPS support? Y(es)/n(o): yes
+
 ONTAP Mediator will be upgraded from version 1.12.1 to 1.13.0.
+Do you wish to continue? Y(es)/n(o): yes
 Capturing support_bundle to save pre-upgrade configuration. API Credentials are required.
     Mediator API User Name: mediatoradmin
                  Password: Running plugins, please wait...

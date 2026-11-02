@@ -24,7 +24,7 @@ If an ONTAP Mediator instance must pair with one of these releases, use the lega
 
 * Perform this task on the Linux host where you installed ONTAP Mediator.
 * While the legacy common name is in effect, you can register only one ONTAP Mediator instance per ONTAP cluster.
-* Upgrading the ONTAP Mediator package regenerates the NetApp self-signed certificates. If you are upgrading an ONTAP Mediator instance that pairs with one of these ONTAP releases, complete step 1 before the upgrade.
+
 
 .Steps
 
