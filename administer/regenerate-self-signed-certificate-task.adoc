@@ -49,4 +49,11 @@ subject=C = US, ST = California, L = San Jose, O = "NetApp, Inc.", OU = ONTAP Co
 Getting CA Private Key
 ----
 
+. Restart ONTAP Mediator to load the regenerated certificate:
+ +
+[source,cli]
+ ----
+ systemctl restart ontap_mediator
+ ----
+
 // repo migration, ONTAPDOC-4248, 2026 OCT 15
