@@ -32,27 +32,12 @@ NOTE: Skip this step if you installed ONTAP Mediator with support for HTTPS only
 systemctl stop mediator-scst
 ----
 
-. Disable ONTAP Mediator and SCST (if used):
+. Disable ONTAP Mediator and SCST:
 +
-[role="tabbed-block"]
-====
-.HTTPS only
---
-
-[source,cli]
-----
-systemctl disable ontap_mediator
-----
---
-.HTTPS and iSCSI
---
-
 [source,cli]
 ----
 systemctl disable ontap_mediator mediator-scst
 ----
---
-====
 
 == Start ONTAP Mediator
 
@@ -67,6 +52,8 @@ systemctl enable ontap_mediator mediator-scst
 ----
 
 . Start SCST:
++
+NOTE: Skip this step if you installed ONTAP Mediator with support for HTTPS only.
 +
 [source,cli]
 ----
