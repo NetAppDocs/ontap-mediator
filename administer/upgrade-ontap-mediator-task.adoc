@@ -97,7 +97,8 @@ Error querying OCSP responder
 
 ONTAP Mediator can be installed with iSCSI and HTTPS support, or HTTPS support only.
 Do you wish to install ONTAP Mediator with iSCSI and HTTPS support? Y(es)/n(o): yes
-
+ONTAP Mediator will be installed with mode: ISCSI_HTTPS
+Selected install package mode: ISCSI_HTTPS
 ONTAP Mediator will be upgraded from version 1.12.1 to 1.13.0.
 Do you wish to continue? Y(es)/n(o): yes
 Capturing support_bundle to save pre-upgrade configuration. API Credentials are required.
@@ -166,7 +167,6 @@ Error querying OCSP responder
 + ONTAP_MEDIATOR_INSTALL_HTTPS_ONLY is set to '1', args are: ''
 + Starting ONTAP Mediator install/update process: previous installation_mode is 'HTTPS_ONLY'
 + Selected install package mode: HTTPS_ONLY
-//root/ontap_mediator.qmrGsH/ontap-mediator-1.13.0/ontap-mediator-1.13.0/install: line 1040: scstadmin: command not found
 ONTAP Mediator will be upgraded from version 1.12.1 to 1.13.0.
 
 
