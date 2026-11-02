@@ -16,7 +16,7 @@ By default, the ONTAP Mediator CA certificates carry a per-installation identifi
 The following ONTAP releases locate the ONTAP Mediator CA by matching the common name exactly and do not recognize the identifier:
 
 * ONTAP 9.11.1 and earlier
-* ONTAP releases earlier than 9.12.1P15, 9.13.1P12, 9.14.1P8, and 9.15.1P2
+* ONTAP patch releases earlier than 9.12.1P15, 9.13.1P12, 9.14.1P8, and 9.15.1P2
 
 If an ONTAP Mediator instance must pair with one of these releases, use the legacy fixed common name.
 

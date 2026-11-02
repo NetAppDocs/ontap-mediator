@@ -64,7 +64,7 @@ a|
 a| 1.10 
 a| 
 * Support for RHEL:
-** Compatible: 10.0, 9.6, 9.5, 9.4, and 8.10.
+** Compatible: 9.5.
 ** Recommended: 10.0, 9.6, 9.4, and 8.10.
 * Support for Rocky Linux 10.0, 9.6, 9.4, and 8.10.
 * Upgrades the base Python version from Python 3.9 to Python 3.12.
@@ -83,7 +83,7 @@ a| 1.9
 a| 
 * Support for RHEL: 
 ** Compatible: 8.9, 8.7, 8.6, 8.5, and 8.4.
-** Recommended: 9.5, 9.4, 9.2, 9.0, 8.10, and 8.8.
+** Recommended: 9.4, 9.2, 9.0, 8.10, and 8.8.
 * Support for Rocky Linux 9.5 and 8.10.
 * FIPS support for RHEL and Rocky Linux.
 * Added performance enhancements for larger scalability.

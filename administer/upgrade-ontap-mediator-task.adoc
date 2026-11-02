@@ -50,7 +50,7 @@ include::../_include/https-only-mediator.adoc[]
 . Before the upgrade, complete the following substep if you are upgrading to ONTAP Mediator 1.13 or later on an ONTAP Mediator instance that pairs with one of the following releases:
 +
 * ONTAP 9.11.1 and earlier
-* ONTAP releases earlier than 9.12.1P15, 9.13.1P12, 9.14.1P8, and 9.15.1P2 
+* ONTAP patch releases earlier than 9.12.1P15, 9.13.1P12, 9.14.1P8, and 9.15.1P2 
 
 .. Add the following line to the `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.user_config.yaml` file.
 +
