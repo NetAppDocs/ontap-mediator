@@ -13,7 +13,7 @@ You can configure ONTAP Mediator host-side attributes, including certificate-rel
 
 == ONTAP Mediator configurable settings
 
-ONTAP Mediator supports several configurable settings. The default values for these settings are provided in a `low_space_threshold_mib: 10` read-only file. The file is located at:
+ONTAP Mediator supports several configurable settings. The default values for these settings are provided in a `ontap_mediator.config.yaml` read-only file. The file is located at:
 
 `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.user_config.yaml`
 

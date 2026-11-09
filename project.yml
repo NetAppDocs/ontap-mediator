@@ -64,6 +64,8 @@ sidebar:
                 url: /administer/regenerate-self-signed-certificate-task.html
               - title: Replace self-signed certificates with trusted certificates
                 url: /administer/replace-self-signed-certificates-task.html
+              - title: Switch to the legacy CA certificate common name
+                url: /administer/switch-ca-certificate-naming-task.html
               - title: Troubleshoot certificate-related issues
                 url: /administer/troubleshoot-certificate-issues-task.html
           - title: Host OS maintenance

@@ -19,12 +19,22 @@ NOTE: For OS and SCST version information, see the link:support-matrix.html[Supp
 
 h| ONTAP Mediator version h| Enhancements
 
+a| 1.13
+a| 
+* Support for RHEL:
+** Compatible: 10.1, 9.7, and 9.5.
+** Recommended: 10.3, 10.2, 10.0, 9.9, 9.8, 9.6, 9.4, and 8.10.
+* Support for Rocky Linux 10.2, 10.1, 10.0, 9.8, 9.7, 9.6, 9.4, and 8.10.
+* Support for Oracle Linux 10.2 (rhck kernel), 10.1 (rhck and uek kernels), 10.0 (uek kernel), 9.8 (uek kernel), 9.7 (rhck and uek kernels), and 9.6 (rhck kernel).
+* The self-signed CA certificates now include a unique per-installation identifier in their common name, for example `ONTAP Mediator CA 1a2b3c4d`. This enables you to register several ONTAP Mediator instances with the same ONTAP cluster. If your ONTAP Mediator must pair with an ONTAP release that does not recognize the identifier, you can switch to the legacy fixed common name. link:../administer/switch-ca-certificate-naming-task.html[Learn how to switch to the legacy CA certificate common name].
+
+
 a| 1.12.1
 a| 
 * Support for RHEL:
-** Compatible: 10.1 and 9.7.
+** Compatible: 10.1, 9.7, and 9.5.
 ** Recommended: 10.2, 10.0, 9.8, 9.6, 9.4, and 8.10.
-* Support for Rocky Linux 10.2, 9.8, and 8.10.
+* Support for Rocky Linux 10.2, 10.1, 10.0, 9.8, and 8.10.
 * Support for Oracle Linux 10.1 and 9.8 with both rhck and uek kernels.
 * Beginning with ONTAP Mediator 1.12.1 and ONTAP 9.19.1, a single ONTAP Mediator instance configured with HTTPS can monitor the following configurations simultaneously:
 
@@ -35,30 +45,34 @@ a|
 a| 1.12 
 a| 
 * Support for RHEL:
-** Compatible: 10.1 and 9.7.
+** Compatible: 10.1, 9.7, and 9.5.
 ** Recommended: 10.2, 10.0, 9.8, 9.6, 9.4, and 8.10.
-* Support for Rocky Linux 10.2, 9.8, and 8.10.
+* Support for Rocky Linux 10.1, 10.0, 9.8, and 8.10.
 * Support for Oracle Linux 10.1 and 9.7 with both rhck and uek kernels.
 * Beginning with ONTAP 9.19.1 and ONTAP Mediator 1.12, you can configure an ONTAP Mediator that uses HTTPS for communication in MetroCluster IP configurations. HTTPS provides increased security by encrypting entire sessions using SSL/TLS. You can choose to install ONTAP Mediator with support for HTTPS only. The SCST package is not installed if this installation method is used. link:../install/prepare-install.html#https-iscsi-installation[Learn more about HTTPS and iSCSI installation options for ONTAP Mediator].
 
 a| 1.11 
 a| 
-* Support for RHEL 10.1, 10.0, 9.7, 9.6, 9.4, and 8.10.
-* Support for Rocky Linux 10.1, 9.7, and 8.10.
+* Support for RHEL:
+** Compatible: 9.5.
+** Recommended: 10.1, 10.0, 9.7, 9.6, 9.4, and 8.10.
+* Support for Rocky Linux 10.1, 10.0, 9.7, and 8.10.
 * Support for Oracle Linux 10.0 and 9.6 with both rhck and uek kernels.
 * Adds support for IPv6 for MetroCluster IP configurations.
 * Adds support for fapolicyd.
 
 a| 1.10 
 a| 
-* Support for RHEL 10.0, 9.6, 9.4, and 8.10.
-* Support for Rocky Linux 10.0, 9.6, and 8.10.
+* Support for RHEL:
+** Compatible: 9.5.
+** Recommended: 10.0, 9.6, 9.4, and 8.10.
+* Support for Rocky Linux 10.0, 9.6, 9.4, and 8.10.
 * Upgrades the base Python version from Python 3.9 to Python 3.12.
 
 a| 1.9.1 
 a| 
 * Support for RHEL: 
-** Compatible: 9.3, 9.1, 8.9, 8.7, 8.6, 8.5, and 8.4.
+** Compatible: 8.9, 8.7, 8.6, 8.5, and 8.4.
 ** Recommended: 9.5, 9.4, 9.2, 9.0, 8.10, and 8.8.
 * Support for Rocky Linux 9.5 and 8.10.
 * Adds new certificates for code signature verification.
@@ -68,8 +82,8 @@ a|
 a| 1.9 
 a| 
 * Support for RHEL: 
-** Compatible: 9.3, 9.1, 8.9, 8.7, 8.6, 8.5, and 8.4.
-** Recommended: 9.5, 9.4, 9.2, 9.0, 8.10, and 8.8.
+** Compatible: 8.9, 8.7, 8.6, 8.5, and 8.4.
+** Recommended: 9.4, 9.2, 9.0, 8.10, and 8.8.
 * Support for Rocky Linux 9.5 and 8.10.
 * FIPS support for RHEL and Rocky Linux.
 * Added performance enhancements for larger scalability.
